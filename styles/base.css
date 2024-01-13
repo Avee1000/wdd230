@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@200;400&display=swap');
 
 body, html {
-    max-width: auto;
     margin: 0 auto;
-    padding: 0 auto ;
     height: auto;
     font-family: 'Belanosima';
 
@@ -26,7 +24,9 @@ header {
 }
 
 header h1{
+    position: relative;
     color: white;
+    right: 60px;
     margin: 0;
 }
 
@@ -88,15 +88,16 @@ footer {
     background-color: #01131E;
 }
 
-footer  h3{
-    font-weight: lighter;
+footer  p{
     color: white;
 }
 
 @media screen and (max-width: 900px) {
 
     header h1{
+        position: relative;
         font-size: 25px;
+        right: 0;
     }
-    
+
 }
