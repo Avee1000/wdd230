@@ -57,6 +57,14 @@ main {
     text-align: center;
 }
 
+main ul{
+    text-align: left;
+}
+
+main ul a:visited {
+    color: red;
+}
+
 .word {
     width: 90%;
     border-bottom: 2px solid #9f9f9f;
