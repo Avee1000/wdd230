@@ -62,11 +62,11 @@ main ul{
 }
 
 main ul a{
-    color: rgb(37, 87, 204);
+    color: rgb(0, 0, 0);
 }
 
 main ul a:hover {
-    color: red;
+    color: blue;
 }
 
 .word {
