@@ -61,7 +61,11 @@ main ul{
     text-align: left;
 }
 
-main ul a:visited {
+main ul a{
+    color: rgb(37, 87, 204);
+}
+
+main ul a:hover {
     color: red;
 }
 
