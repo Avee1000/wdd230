@@ -9,4 +9,7 @@
         grid-column: 3/4;
     }
 
+    footer{
+        margin-bottom: auto;
+    }
 }
