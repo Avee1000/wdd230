@@ -36,9 +36,10 @@ nav {
 
 nav a{
     color: white;
-    display: block;
+    display: flex;
+	align-items: center;
+	justify-content: center;
     text-decoration: none;
-    text-align: center;
     font-family: 'Belanosima', Times, serif;
     font-weight: lighter;
     font-size: 30px;
