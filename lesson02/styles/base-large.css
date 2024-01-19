@@ -1,15 +1,20 @@
-@media screen and (min-width:1000px){
+@media screen and (min-width:1900px){
     main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: .5rem;
     }
 
-    section:nth-of-type(3){
-        grid-column: 3/4;
+    section h2{
+        font-size: 4rem;
     }
 
-    footer{
-        margin-bottom: auto;
+    section h3, section p, section a{
+        padding: 0 1rem;
+        font-size: 3rem;
+    }
+    
+    section:nth-of-type(3){
+        grid-column: 3/4;
     }
 }

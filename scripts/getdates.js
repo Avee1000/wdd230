@@ -3,4 +3,4 @@ modified.style.color = 'white';
 
 let lastMod = new Date(document.lastModified);
 
-modified.textContent = `LAST MODIFIED: ` + lastMod;
+modified.innerHTML += lastMod;
