@@ -4,6 +4,16 @@
     }
 
     footer p{
-        font-size: .8rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    main{
+        display: block;
+    }
+
+    footer p{
+        font-size: .5rem;
     }
 }
