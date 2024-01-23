@@ -31,27 +31,59 @@ header h1{
     margin: 0;
 }
 
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem;
+    background-color: #eee;
+	color: black;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "≡";;
+}
+
 nav {
     background-color: #000000;
 }
 
-nav a{
+.navigation{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a{
     color: white;
-    display: flex;
-	align-items: center;
-	justify-content: center;
+    display: block;
     text-decoration: none;
     font-family: 'Belanosima', Times, serif;
     font-weight: lighter;
     transition: 0.5s;
     font-size: 24px;
     padding: 10px;
+    cursor: pointer;    
 }
 
 nav a:hover{
     background-color: white;
     color: black;
     opacity: .5;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
 }
 
 main {
