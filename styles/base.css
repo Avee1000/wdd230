@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@200;400&display=swap');
+*{
+    box-sizing: border-box;
+}
 
 body, html {
     margin: auto;
@@ -25,7 +28,6 @@ header {
 header h1{
     position: relative;
     color: white;
-    right: 60px;
     margin: 0;
 }
 
@@ -41,7 +43,8 @@ nav a{
     text-decoration: none;
     font-family: 'Belanosima', Times, serif;
     font-weight: lighter;
-    font-size: 30px;
+    transition: 0.5s;
+    font-size: 24px;
     padding: 10px;
 }
 
@@ -103,12 +106,12 @@ footer  p{
     color: white;
 }
 
-@media screen and (max-width: 1000px) {
-
+@media screen and (max-width: 640px) {
+    
     header h1{
-        position: relative;
-        font-size: 1.5rem;
-        right: 0;
+        font-size: 1rem;
+        right: auto;
     }
-
 }
+
+
