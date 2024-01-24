@@ -150,10 +150,6 @@ footer  p{
     color: white;
 }
 
-#flag::after{
-    content: "\1F1EC";
-}
-
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
