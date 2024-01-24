@@ -31,7 +31,7 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 5px;
-        height: 500px;
+        height: auto;
     }
 
     .word{
@@ -51,6 +51,15 @@
 
     .card:nth-of-type(2){
         grid-column: 2/3;
+    }
+
+    #google{
+        display: block;
+        width: 95%;
+        height: 600px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        border-radius: 5px;
     }
 
 }
@@ -99,7 +108,7 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 5px;
-        height: 500px;
+        height: auto;
     }
 
     .word{
@@ -119,5 +128,15 @@
 
     .card:nth-of-type(2){
         grid-column: 2/3;
+    }
+
+    #google{
+        display: block;
+        width: 97%;
+        height: 600px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        padding: 0;
+        border-radius: 5px;
     }
 }

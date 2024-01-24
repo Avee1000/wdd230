@@ -33,17 +33,28 @@ header h1{
 
 #menu {
 	display: block;
-	font-size: 2rem;
-	font-weight:700;
+	font-weight:300;
 	text-decoration: none;
-	padding: .5rem;
-    background-color: #eee;
+	padding: .7rem;
+    background-color: #dad9d9;
 	color: black;
     cursor: pointer;
 }
 
 #menu::before {
-    content: "≡";;
+    content: "\f0c9";
+    font-family: 'Font Awesome 6 Free';
+    color: black;
+    font-size: 2rem;
+    font-weight: 900; /*always use this after using font awesome unicodes */
+}
+
+#menu.show::before {
+    content: "\f00d";
+    font-family: 'Font Awesome 6 Free';
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 nav {
@@ -82,10 +93,6 @@ nav a:hover{
 	display: block;
 }
 
-#menu.show::before {
-	content: "X";
-}
-
 main {
     text-align: center;
 }
@@ -100,6 +107,11 @@ main ul a{
 
 main ul a:hover {
     color: blue;
+}
+
+main ul li::marker{
+    content: "🍕";
+    font-size: 12px;
 }
 
 .word {
@@ -138,6 +150,10 @@ footer  p{
     color: white;
 }
 
+#flag::after{
+    content: "\1F1EC";
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -164,6 +180,16 @@ footer  p{
         font-size: 1rem;
         right: auto;
     }
+
+    #google{
+        width: 90%;
+        height: 300px;
+        margin: 0 25px;
+        margin-bottom: 25px;
+        border: 2px solid #9f9f9f;
+        border-radius: 5px;
+    }
+    
 }
 
 
