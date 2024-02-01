@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Medula+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Medula+One&family=Viga&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #F1FAEE   ;
+    --secondary-color: #457B9D;
+    --accent1-color: #d22836;
+    --accent2-color: #132339;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Viga";
+    --paragraph-font:"Medula One", Helvetica, sans-serif;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+    margin: auto;
+    height: auto;
+    font-size: clamp(0.5rem, 1rem, 10rem);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+header h1 {
+    border-left: 2px solid white;
+    padding-left: 1rem ;
+    color: white;
+}
+
+.logo{
+    width: 100px;
+    padding-bottom: .5rem;
+}
+
+#menu {
+	display: block;
+	font-weight:300;
+	text-decoration: none;
+	padding: .7rem;
+    background-color: #dad9d9;
+	color: black;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "\f0c9";
+    font-family: 'Font Awesome 6 Free';
+    color: black;
+    font-size: 2rem;
+    font-weight: 900; /*always use this after using font awesome unicodes */
+}
+
+#menu.show::before {
+    content: "\f00d";
+    font-family: 'Font Awesome 6 Free';
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+nav {
+    background-color: #000000;
+}
+
+.navigation{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-family: var(--heading-font);
+    color: white;
+    display: block;
+    transition: 0.5s;
+    font-size: 22px;
+    padding: 13px;
+    cursor: pointer;    
+
+}
+
+.navigation li {
+	display: none;
+}
+
+.show li {
+	display: block;
+}
+
+#hero {
+    margin-top: -50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    z-index: -1;
+}
+
+#hero-image{
+    width: 100%;
+    height: 100%;
+}
+
+.button-box {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: var(--accent1-color);
+    margin-bottom: 200px;
+    width: 20%;
+    margin: auto;
+}
+
+.card{
+    text-align: center;
+    margin: 25px auto;
+    padding: 1rem;
+    width: 90%;
+    border-radius: 10px;
+    border-bottom: 10px solid var(--secondary-color);
+    box-shadow: 5px 5px 10px rgb(92, 92, 92);
+}
+
+.card h2{
+    color:  black;
+    margin-top: auto;
+    padding: 20px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/*/////////////////////////////////////////////////////////////////*/    
+
+@media screen and (max-width: 640px) {
+
+    .navigation a {
+        transition: 0.7s ease;
+    }
+    
+    .navigation a:hover {
+        background-color: #dad9d9 ;
+    }
+
+}
