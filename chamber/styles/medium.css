@@ -40,4 +40,9 @@
     .navigation a:hover {
         border-bottom: 2px solid #fff8f8; /* Change the color to your desired color */
     }
+
+    .card{
+        width: 80%;
+    }
+
 }
