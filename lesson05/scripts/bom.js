@@ -26,6 +26,8 @@ button.addEventListener('click', function () {
         input.value = '';
     } else {
         alert("No input detected. Write Something!!!");
+        input.focus();
+
     }
 
  });
