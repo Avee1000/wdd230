@@ -1,6 +1,19 @@
 /* //////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 1000px){
 
+    header{
+        padding: 3rem;
+    }
+
+    .switch{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: inline-block;
+        width: 65px;
+        height: 35px;
+    }
+
     nav {
         width: 95%;
         height: auto;
@@ -111,5 +124,10 @@
         grid-column: 1/4;
         grid-row: 2/3;
     }
+
+    .dark-mode {
+        background-color: #000000;
+    }
+    
 
 }
