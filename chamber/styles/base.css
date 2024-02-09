@@ -319,6 +319,11 @@ ul{
     color: var(--primary-color);
 }
 
+.dark-mode #spotlight p{
+    background-color: #1b1b1b;
+    color: var(--primary-color);
+}
+
 .dark-mode .card{
     box-shadow: 5px 5px 10px rgb(199, 198, 198);
 }
