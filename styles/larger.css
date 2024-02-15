@@ -34,6 +34,10 @@
         height: auto;
     }
 
+    .hero{
+        grid-column: span 2;
+    }
+
     .word{
         grid-column: span 2;
         text-align: left;
@@ -109,6 +113,22 @@
         grid-template-columns: auto auto;
         grid-gap: 5px;
         height: auto;
+    }
+
+    .hero{
+        grid-column: span 2;
+    }
+
+    .herolabel {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        background: radial-gradient(#fff, #5968ab);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+        /* Buenas */
     }
 
     .word{

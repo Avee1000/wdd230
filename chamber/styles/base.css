@@ -354,7 +354,11 @@ ul{
     }
 
     main{
-        height: 2000px;
+        /* height: 2000px; */
+    }
+
+    #spotlight{
+        margin: 3rem auto;
     }
 
     .switch{

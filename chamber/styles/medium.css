@@ -111,7 +111,11 @@
     }
 
     main{
-        height: 1700px;
+        /* height: 1700px; */
+    }
+
+    #spotlight {
+        margin: 3rem auto;
     }
 
     .dark-mode body{
