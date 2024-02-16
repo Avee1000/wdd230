@@ -106,12 +106,17 @@
         border-bottom: 2px solid #fff8f8; /* Change the color to your desired color */
     }
 
-    .card{
-        width: 80%;
+    #hero-box {
+        margin-top: -50px;
     }
 
-    main{
-        /* height: 1700px; */
+    .hero{
+        position: relative;
+        z-index: -1;
+    }
+
+    .card{
+        width: 80%;
     }
 
     #spotlight {

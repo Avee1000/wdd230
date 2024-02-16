@@ -27,7 +27,7 @@
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
-                <img class='logo' src="images/white.png" alt="Chamber logo">
+                <img class='logo' src="images/white.webp" alt="Chamber logo">
             </a>
             <h1>Benncima Chamber of Commerce</h1>
             <label class="switch">
@@ -46,9 +46,13 @@
             </ul>
         </nav>
 
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-image" src="images/smiling.jpg" alt="boy and woman">
+        <div id="hero-box">
+            <div class="hero">
+                <picture>
+                  <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                  <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                  <img src="images/hero-large.webp" alt="Hero" width="1125" height="750">
+                </picture>
             </div>
         </div>
 
@@ -76,14 +80,11 @@
             </section>
 
             <section class="card">
-                <h2>CCCCCCCCCCCC</h2>         
-                <p class="blog-text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Minus atque alias at iure modi, optio aliquid expedita. Temporibus quam 
-                    cupiditate error praesentium id? Officiis minus quibusdam corrupti dicta, 
-                    sequi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Minus atque alias at iure modi, optio aliquid expedita. Temporibus quam 
-                    cupiditate error praesentium id? Officiis minus quibusdam corrupti dicta, 
-                    sequi soluta.</p>
+                <h2>WEATHER</h2>
+                <p id="temperature">Temperature: </p>
+                <p id="speed">Wind Speed: </p>
+                <p id="chill">Wind Chill: </p>
+
             </section>
 
             <section id="spotlight">
@@ -118,7 +119,7 @@
 
         <footer>
             <div id="logo-area">
-                <img class='logo' src="images/white.png" alt="Chamber logo">
+                <img class='logo' src="images/white.webp" alt="Chamber logo">
                 <p>Benncima Chamber of Commerce</p>
             </div>
 
@@ -151,6 +152,8 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/darkmode.js"></script>
+        <script src="scripts/windchill.js"></script>
+
 
     </div>
 </body>
