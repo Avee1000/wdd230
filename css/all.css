@@ -462,9 +462,9 @@
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1); }
 
-.fa-rotate-by {
+/* .fa-rotate-by {
   -webkit-transform: rotate(var(--fa-rotate-angle, none));
-          transform: rotate(var(--fa-rotate-angle, none)); }
+          transform: rotate(var(--fa-rotate-angle, none)); } */
 
 .fa-stack {
   display: inline-block;
