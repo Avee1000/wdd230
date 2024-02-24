@@ -172,12 +172,6 @@ nav {
     object-fit: cover;
 }
 
-figure img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 section.card {
     background-color: var(--accent1-color);
     justify-content: center;
@@ -362,7 +356,20 @@ ul{
 }
 
 .left-sidebar section h2{
-    margin: 1rem 0;
+    font-family: var(--heading-font);
+}
+
+.left-sidebar li{
+    font-family: var(--paragraph-font);
+}
+
+.left-sidebar section h2{
+    text-decoration: underline;
+    margin: 8px 0;
+}
+
+.right-sidebar figure{
+    margin: 2rem;
 }
 
 .discover h1{
@@ -371,6 +378,30 @@ ul{
     border-bottom: 2px solid rgb(0, 0, 0);
 }
 
+figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+figcaption{
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.dark-mode figcaption{
+    color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    background-color: #1b1b1b;
+}
 
 /*/////////////////////////////////////////////////////////////////*/    
 
