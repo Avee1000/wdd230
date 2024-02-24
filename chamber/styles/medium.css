@@ -148,7 +148,8 @@
         margin: 2rem;
     }
 
-    .discover h1{
+    .discover h5{
+        font-size: 2rem;
         margin: 3rem;
         text-align: center;
     }

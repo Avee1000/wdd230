@@ -142,7 +142,8 @@
         margin: 2rem 5rem;
     }
 
-    .discover h1{
+    .discover h5{
+        font-size: 2rem;
         grid-column: 1/4;
         grid-row: 1/2;
         text-align: center;
