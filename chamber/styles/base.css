@@ -340,7 +340,7 @@ ul{
     box-shadow: none;
 }
 
-.dark-mode .discover h1{
+.dark-mode .discover h5{
     border-top: 2px solid white;
     display: block;
     color: white;
