@@ -1,0 +1,69 @@
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+main{
+    display: grid;
+    text-align: center;
+    margin: 2rem;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.ws{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+thead tr:nth-of-type(2):not(:first-child){
+    color: white;
+    background-color: rgb(67, 67, 67);
+}
+
+thead tr:nth-of-type(2) th{
+    border: 1px solid black;
+}
+
+thead tr:nth-of-type(2) th{
+    font-size: 20px;
+    padding: 10px;
+}
+
+tbody tr td{
+    border: 1px solid black;
+}
+
+tbody tr td:nth-of-type(1){
+    font-size: 17px;
+    font-weight: bold;
+}
+
+td{
+    padding: 10px;
+}
+
+table caption{
+    caption-side: bottom;
+    margin-top: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Light gray for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e4e2e2; /* White for even rows */
+}
+
