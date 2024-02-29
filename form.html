@@ -56,10 +56,10 @@
                 <label>Email*<input type="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" id="email" name="email" 
                     placeholder="someone@byui.edu" title="Please enter a valid email address" required></label>
 
-                <div class="r">Page Rating
+                <label for="r">Page Rating</label>
                     <div id="rangevalue">0</div>
-                    <input type="range" id="r" name="r" min="0" max="10" step="1" list="rangevalues"></div>
-                <datalist id="rangevalues">
+                    <input type="range" id="r" name="r" min="1" max="10" step="1" value="1">  
+                <!-- <datalist id="rangevalues">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -70,7 +70,7 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-                </datalist>
+                </datalist> -->
 
                 <div class="button"><input type="submit" value="Create My Account" id="submit"> </div>
 
