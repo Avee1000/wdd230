@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@200;400&display=swap');
+
+:root{
+    --text-color: "black";
+    --required-color: rgb(166, 7, 7);
+    --valid-color: rgb(4, 110, 4);
+}
+
+#main{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#main h1{
+    text-align: center;
+}
+
+.wf1{
+    display: block;
+    text-align: left;
+    width: 80%;
+}
+
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid #878282;
+    border-radius: 6px;
+    padding: 1rem 2%;
+}
+
+.wf1 legend{
+    font-size: 1.5rem;
+    color: var(--required-color);
+    padding:0 .5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding: 1rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"]
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 350px;
+    appearance: none;
+}
+
+#pwd::placeholder {
+    font-size: 13px;
+}
+
+.incorrect #repeated_pwd{
+    background-color: rgba(255, 0, 0, 0.1); 
+}
+
+/* .wf1 input[type="range"]{
+    display: block;
+    width: 50%;
+} */
+
+.wf1 input:required{
+    border-right: 5px solid;
+    border-right-color: var(--required-color);
+}
+
+.wf1 input:not(:nth-of-type(3)):required:valid{
+    border-right: 5px solid;
+    border-right-color: var(--valid-color);
+}
+
+/*----------------- RANGE ----------------*/
+
+#r {
+    width: 230px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin-left: 2.6rem;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+	width: 220px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+.wf1 input[type="submit"]{
+    background-image: linear-gradient(var(--required-color), #6f200e);
+    display: block;
+    border: none;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #eee;
+    width: 60%;
+    max-width: 350px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.button{
+    display: block;
+    padding: 1rem;
+    margin-bottom: .2rem;
+}
+
+/*--------------------RECORD.HTML---------------------*/
+
+#record-main{
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recordmsg{
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border: 2px solid black;
+    width: 90%;
+    border-radius: 7px;
+    font-family: "Cambria", Georgia, Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+
+    .wf1{
+        display: block;
+        text-align: left;
+        width: 90%;
+    }
+    
+    .wf1 input[type="text"],
+    .wf1 input[type="password"],
+    .wf1 input[type="email"]
+    {
+        background-color: #eee;
+        display: block;
+        border: 1px solid #999;
+        border-radius: 6px;
+        padding: .75rem;
+        color: #555;
+        width: 100%;
+        max-width: 300px;
+        appearance: none;
+    }
+}
