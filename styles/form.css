@@ -37,7 +37,7 @@
     padding:0 .5rem;
 }
 
-.wf1 label{
+.wf1 label, .r{
     display: block;
     padding: 1rem;
 }
