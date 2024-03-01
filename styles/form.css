@@ -178,4 +178,15 @@
         max-width: 300px;
         appearance: none;
     }
+
+    .wf1 input:required{
+        border-right: 5px solid;
+        border-right-color: var(--required-color);
+    }
+    
+    .wf1 input:not(:nth-of-type(3)):required:valid{
+        border-right: 5px solid;
+        border-right-color: var(--valid-color);
+    }
+
 }

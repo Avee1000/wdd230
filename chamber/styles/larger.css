@@ -188,5 +188,61 @@
         transform: scale(1.04);
         filter: saturate(100%);
     }
-  
+
+
+    /*------------------------FORMS-------------------------*/
+
+    #main{
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        column-gap: 20px;
+        align-items: start;
+        margin: 0 2rem;
+    }
+
+    .wf1{
+        grid-column: 1/3;
+        margin: 0 auto;  
+        width: 100%;
+        font-size: 1.14rem;
+    }
+    
+    textarea{
+        width: 350px;
+    }
+
+    #right-side{
+        grid-column: 3/4;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    #right-side section{
+        border: 1px solid #878282;
+        border-radius: 6px;
+        margin-top: .79rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        box-shadow: 3px 3px 4px inset rgb(74, 73, 73) ;
+        font-size: larger;
+    }
+
+    #right-side section span{
+        color: rgb(174, 11, 11);
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    ul.list li{
+        text-align: left;
+        padding: 5px;
+        line-height: 1.5;
+        margin: auto;
+    }
+
+    ul.list li::marker{
+        content: "\2022"; /* Unicode character for a bullet point */
+        color: #007bff; /* Set the color of the bullet */
+
+    }
 }

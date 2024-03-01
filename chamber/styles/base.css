@@ -405,6 +405,138 @@ figcaption{
     background-color: #1b1b1b;
 }
 
+
+
+/*---------------------------  FORMS -----------------------------*/
+
+:root{
+    --text-color: "black";
+    --required-color: rgb(166, 7, 7);
+    --valid-color: rgb(4, 110, 4);
+}
+
+#main{
+    display: grid;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#main h1{
+    text-align: left;
+    margin: 3px;
+}
+
+.wf1, #right-side{
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    font-weight: 50;
+    display: block;
+    text-align: left;
+    width: 80%;
+}
+
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid #878282;
+    border-radius: 6px;
+    padding: 1rem 2%;
+}
+
+.wf1 legend{
+    font-size: 1.5rem;
+    color: var(--required-color);
+    padding:0 .5rem;
+}
+
+.wf1 label, .r{
+    display: block;
+    padding: 1rem;
+}
+
+.dark-mode .wf1 label{
+    color: white;
+    
+}
+
+
+.wf1 input[type="text"],
+.wf1 input[type="telephone"],
+.wf1 input[type="email"]
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 350px;
+    appearance: none;
+}
+
+textarea{
+    display: block;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    max-height: 150px;
+
+}
+
+.wf1 input[type="radio"]{
+    margin: 6px;
+}
+
+#pwd::placeholder {
+    font-size: 13px;
+}
+
+.incorrect #repeated_pwd{
+    background-color: rgba(255, 0, 0, 0.1); 
+}
+
+.memInfo{
+    color: #445ba9;
+    font-size: 1.3rem;
+    margin:  .5rem;
+}
+
+.wf1 input:required{
+    border-right: 5px solid;
+    border-right-color: var(--required-color);
+}
+
+.wf1 input:not(:nth-of-type(3)):required:valid{
+    border-right: 5px solid;
+    border-right-color: var(--valid-color);
+}
+
+.wf1 input[type="submit"]{
+    background-image: linear-gradient(var(--required-color), #6f200e);
+    display: block;
+    border: none;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #eee;
+    width: 60%;
+    max-width: 350px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.button{
+    display: block;
+    margin: 1rem auto ;
+    padding: 1rem;
+    margin-bottom: .2rem;
+}
+
 /*/////////////////////////////////////////////////////////////////*/    
 
 @media screen and (max-width: 640px) {
@@ -475,5 +607,43 @@ figcaption{
     .right-sidebar{
         margin: 2rem 0;
     }
+
+    /*------------------------FORMS-------------------------*/
+    .wf1{
+        display: block;
+        text-align: left;
+        width: 90%;
+        font-size: 15px;
+    }
+    
+    .wf1 input[type="text"],
+    .wf1 input[type="telephone"],
+    .wf1 input[type="email"]
+    {
+        background-color: #eee;
+        display: block;
+        border: 1px solid #999;
+        border-radius: 6px;
+        padding: .75rem;
+        color: #555;
+        width: 100%;
+        max-width: 300px;
+        appearance: none;
+    }
+
+    .wf1 input:required{
+        border-right: 5px solid;
+        border-right-color: var(--required-color);
+    }
+    
+    .wf1 input:not(:nth-of-type(3)):required:valid{
+        border-right: 5px solid;
+        border-right-color: var(--valid-color);
+    }
+
+    textarea{
+        width: 300px;
+    }
+
 
 }

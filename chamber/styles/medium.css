@@ -189,4 +189,16 @@
         transform: scale(1.04);
         filter: saturate(100%);
     }
+
+
+
+    /*------------------------FORMS-------------------------*/
+
+    .wf1{
+        width: 90%;
+    }
+
+    textarea{
+        width: 350px;
+    }
 }
