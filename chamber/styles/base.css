@@ -416,11 +416,15 @@ figcaption{
 }
 
 #main{
-    display: grid;    
+    display: flex;    
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+}
+
+.dark-mode #main{
+    background-color: #000000;
 }
 
 #main h1{
@@ -444,11 +448,27 @@ figcaption{
     padding: 1rem 2%;
 }
 
+.wf1 fieldset:nth-of-type(3)
+{
+    padding-bottom: 2rem;
+}
+
 .wf1 legend{
     font-size: 1.5rem;
     color: var(--required-color);
     padding:0 .5rem;
 }
+
+.wf1 span{
+    color: #a60606;
+}
+
+.dark-mode .wf1 legend, 
+.dark-mode #right-side span,
+.dark-mode .wf1 span{
+    color: pink;
+}
+
 
 .wf1 label, .r{
     display: block;
@@ -457,7 +477,6 @@ figcaption{
 
 .dark-mode .wf1 label{
     color: white;
-    
 }
 
 
@@ -484,7 +503,7 @@ textarea{
     border: 1px solid #999;
     border-radius: 6px;
     padding: .75rem;
-    color: #555;
+    color: #000000;
     max-height: 150px;
 
 }
@@ -502,9 +521,13 @@ textarea{
 }
 
 .memInfo{
-    color: #445ba9;
+    color: #1a3281;
     font-size: 1.3rem;
     margin:  .5rem;
+}
+
+.dark-mode .memInfo{
+    color: #aad5f8;
 }
 
 .wf1 input:required{
@@ -519,7 +542,6 @@ textarea{
 
 .wf1 input[type="submit"]{
     background-image: linear-gradient(var(--required-color), #6f200e);
-    display: block;
     border: none;
     border-radius: 6px;
     padding: .75rem;
@@ -532,10 +554,81 @@ textarea{
 
 .button{
     display: block;
-    margin: 1rem auto ;
+    margin: -1rem 0 2rem 1rem;
     padding: 1rem;
-    margin-bottom: .2rem;
+    font-size: 1.3em;
 }
+
+hr{
+    /* width: 3rem; */
+    color: black;
+    border: 1px solid black;
+}
+
+#right-side section span{
+    color: rgb(174, 11, 11);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1rem 3px;
+}
+
+#right-side hr:first-of-type{
+    border: 1px solid black;
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+
+#right-side h1{
+    display: block;
+    text-align: center;
+}
+
+.dark-mode #right-side h1,
+.dark-mode #right-side ul.list li{
+    color: white;
+}
+
+.dark-mode #right-side hr{
+    border: 1px solid white;
+}
+
+.dark-mode #right-side section{
+    box-shadow: 2px 2px 6px 1px inset rgb(105, 105, 105) ;
+}
+
+
+
+/*--------------------THANK YOU.HTML---------------------*/
+
+#record-main{
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.recordmsg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border: 2px solid black;
+    width: 90%;
+    border-radius: 7px;
+    font-family: "Cambria", Georgia, Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.dark-mode .recordmsg{
+    border: 2px solid white;
+    color: white;
+}
+
 
 /*/////////////////////////////////////////////////////////////////*/    
 
@@ -643,6 +736,34 @@ textarea{
 
     textarea{
         width: 300px;
+    }
+
+    
+    #right-side{
+        width: 90%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #right-side section{
+        width: 90%;
+        border-radius: 6px;
+        margin: 2rem 1rem;
+        padding: 1rem;
+        box-shadow: 2px 2px 6px 1px inset rgb(74, 73, 73) ;
+        font-size: larger;
+    }
+
+  
+    ul.list li{
+        /* display: inline-block; */
+        text-align: left;
+        padding: 5px;
+        line-height: 1.5;
+        margin: auto;
+        word-break: keep-all;
     }
 
 

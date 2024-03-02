@@ -17,9 +17,6 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/brands.css">
-    <link rel="stylesheet" href="../css/solid.css">
     <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
 </head>
 
@@ -82,7 +79,7 @@
                     <div class="memInfo">Business/Organization's details</div>
                     <label>Business/Organization's name*<input type="text" id="business" name="business" required></label>
 
-                    <label>Business/Organization's description <span style="color: rgb(166, 6, 6);">(Optional)</span></label>
+                    <label>Business/Organization's description <span>(Optional)</span></label>
                     <textarea name="" id="" cols="30" rows="10" type="text" id="businessDesc" 
                     placeholder="Enter a description of your Business/Organization" spellcheck="true" name="businessDesc" ></textarea>
                 </fieldset>
@@ -94,13 +91,15 @@
 
 
             <div id="right-side">
+                <hr>
+                <h1>Membership Tiers & Benefits</h1>
                 <section>
                     <h1>NP Membership (Non-Profit)</h1>
                     <Span>Cost: Free</Span>
                     <ul class="list">
-                        <li>Access to networking events with other non-profit organizations.</li>
-                        <li>Free or discounted participation in workshops and training sessions.</li>
-                        <li>Inclusion in the organization's directory for increased visibility.</li>
+                        <li>Access to networking events with other non-profit organizations.<hr></li>
+                        <li>Free or discounted participation in workshops and training sessions.<hr></li>
+                        <li>Inclusion in the organization's directory for increased visibility.<hr></li>
                     </ul>
                 </section>
 
@@ -108,9 +107,9 @@
                     <h1>Bronze Membership</h1>
                     <Span>Cost: $250 per year</Span>
                     <ul class="list">
-                        <li>Basic advertising opportunities on the organization's website or newsletter.</li>
-                        <li>10% discount on event registrations.</li>
-                        <li>Quarterly members-only webinar on industry trends and best practices.</li>
+                        <li>Basic advertising opportunities on the organization's website or newsletter. <hr></li>
+                        <li>10% discount on event registrations.<hr></li>
+                        <li>Quarterly members-only webinar on industry trends and best practices.<hr></li>
                     </ul>
                 </section>
 
@@ -118,10 +117,10 @@
                     <h1>Silver Membership</h1>
                     <Span>Cost: $500 per year</Span>
                     <ul class="list">
-                        <li>Enhanced advertising exposure on the organization's website, newsletter, and social media.</li>
-                        <li>15% discount on event registrations.</li>
-                        <li>Monthly members-only webinars covering specific topics in-depth.</li>
-                        <li>Priority access to limited-capacity events.</li>
+                        <li>Enhanced advertising exposure on the organization's website, newsletter, and social media.<hr></li>
+                        <li>15% discount on event registrations.<hr></li>
+                        <li>Monthly members-only webinars covering specific topics in-depth.<hr></li>
+                        <li>Priority access to limited-capacity events.<hr></li>
                     </ul>
                 </section>
 
@@ -129,11 +128,11 @@
                     <h1>Gold Membership</h1>
                     <Span>Cost: $1000 per year</Span>
                     <ul class="list">
-                        <li>Premium advertising slots on the organization's website, newsletter, and social media.</li>
-                        <li>20% discount on event registrations.</li>
-                        <li>Access to an annual weekend retreat or conference at a discounted rate.</li>
-                        <li>Priority access to limited-capacity events.</li>
-                        <li>Priority access to all events, workshops, and training sessions.</li>
+                        <li>Premium advertising slots on the organization's website, newsletter, and social media.<hr></li>
+                        <li>20% discount on event registrations.<hr></li>
+                        <li>Access to an annual weekend retreat or conference at a discounted rate.<hr></li>
+                        <li>Priority access to limited-capacity events.<hr></li>
+                        <li>Priority access to all events, workshops, and training sessions.<hr></li>
                     </ul>
                 </section>
             </div>
@@ -172,13 +171,16 @@
                     <i class="fa-brands fa-youtube"></i></a>
             </div>
         </footer>
+        <script>
+            document.getElementById('last-modified').style.color = 'white';
+            document.getElementById('last-modified').innerHTML += new Date(document.lastModified);
+        </script>
         
-        <script src="scripts/getdates.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/darkmode.js"></script>
-        <script src="scripts/windchill.js"></script>
 
 
     </div>
 </body>
 </html>
+
