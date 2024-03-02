@@ -235,8 +235,8 @@
         word-break: keep-all;
     }
 
-    #right-side h1:first-of-type,
-    #right-side hr:first-of-type{
+    #right-side .firsth1,
+    #right-side .firsthr{
         display: none;
     }
 

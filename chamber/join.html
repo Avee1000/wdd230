@@ -51,7 +51,7 @@
 
                     <label>Last Name*<input type="text" id="lastname" name="lastname" required></label>
 
-                    <label>Title or Position*<input type="text"pattern="^[A-Za-z\- ]{7,}" id="title" name="title" required></label>
+                    <label>Title or Position*<input type="text" pattern="^[A-Za-z\- ]{7,}" id="title" name="title" required></label>
 
                     <!-- <label>Password*<input type="password" pattern="(?=.*\d.*\d)(?=.*[A-Za-z]).{8,}" id="pwd" name="pwd" 
                         placeholder="Password must be 8 characters long and alpha-numberic" required></label> -->
@@ -59,12 +59,12 @@
                     <label>Email*<input type="email" pattern="[a-zA-Z0-9_.\-]+@[a-Za-Z]+\.(?=.*com)" id="email" name="email" 
                         placeholder="someone@example.com" title="Please enter a valid email address" required></label>
 
-                    <label>Mobile Phone number*<input type="telephone"  id="phone" name="phone" 
-                        placeholder=""  required></label>
+                    <label>Mobile Phone number*<input type="tel"  id="phone" name="phone" required></label>
     
                 </fieldset> 
     
                 <!-------------------------------- MEMBERSHIP -------------------------------------->
+
                 <fieldset>
                     <legend>Membership Information</legend>
                     <div class="memInfo">Membership Level</div>
@@ -80,8 +80,8 @@
                     <label>Business/Organization's name*<input type="text" id="business" name="business" required></label>
 
                     <label>Business/Organization's description <span>(Optional)</span></label>
-                    <textarea name="" id="" cols="30" rows="1" id="businessDesc" 
-                    placeholder="Enter a description of your Business/Organization" spellcheck="true" name="businessDesc" ></textarea>
+                    <textarea name="businessDesc" cols="30" rows="6" id="businessDesc" 
+                    placeholder="Enter a description of your Business/Organization" spellcheck="true" ></textarea>
                 </fieldset>
                      
 
@@ -91,8 +91,8 @@
 
 
             <div id="right-side">
-                <hr>
-                <h1>Membership Tiers & Benefits</h1>
+                <hr class="firsthr">
+                <h1 class="firsth1">Membership Tiers & Benefits</h1>
                 <section>
                     <h1>NP Membership (Non-Profit)</h1>
                     <Span>Cost: Free</Span>

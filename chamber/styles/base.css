@@ -481,7 +481,7 @@ figcaption{
 
 
 .wf1 input[type="text"],
-.wf1 input[type="telephone"],
+.wf1 input[type="tel"],
 .wf1 input[type="email"]
 {
     background-color: #eee;
@@ -572,7 +572,7 @@ hr{
     margin: 1rem 3px;
 }
 
-#right-side hr:first-of-type{
+#right-side .firsthr{
     border: 1px solid black;
     width: 90%;
     margin-bottom: 1.5rem;
