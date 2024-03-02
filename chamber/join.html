@@ -82,6 +82,8 @@
                     <textarea name="businessDesc" cols="30" rows="6" id="businessDesc" 
                     placeholder="Enter a description of your Business/Organization" spellcheck="true" ></textarea></label>
                 </fieldset>
+
+                <input type="hidden" name="milli" id="milli" >
                      
 
                 <div class="button"><input type="submit" value="Create My Account" id="submit"> </div>                    
@@ -171,6 +173,7 @@
             </div>
         </footer>
         <script>
+            document.getElementById('milli').value = Date.now();
             document.getElementById('last-modified').style.color = 'white';
             document.getElementById('last-modified').innerHTML += new Date(document.lastModified);
         </script>
