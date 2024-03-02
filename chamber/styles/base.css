@@ -588,6 +588,7 @@ hr{
 }
 
 .dark-mode #right-side section{
+    border: 1px solid rgb(135, 132, 132);
     box-shadow: 2px 2px 6px 1px inset rgb(105, 105, 105) ;
 }
 
@@ -705,7 +706,7 @@ hr{
     }
     
     .wf1 input[type="text"],
-    .wf1 input[type="telephone"],
+    .wf1 input[type="tel"],
     .wf1 input[type="email"]
     {
         background-color: #eee;
