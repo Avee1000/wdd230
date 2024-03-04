@@ -1,0 +1,18 @@
+{
+    "familyName" : "Idahosa-Sunny",
+    "dateMoved" : 2010,
+    "noOfPeopleInFamily" : 6,
+    "visitedByBishopric" : true,
+    "members" : [
+      {
+        "name" : "Osamagumwende Idahosa-Sunny",
+        "gender" : "Male",
+        "birthdate" : "23rd September 2001"
+      },
+      {
+        "name":"Angel Idahosa",
+        "gender" : "Female",
+        "birthdate" : "23rd September 2001"
+      }
+    ]
+}
