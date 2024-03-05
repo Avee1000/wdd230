@@ -5,5 +5,10 @@ async function getLinkList() {
     
     const response = await fetch(linksURL);
     const data = response.json();
-    displayLinks(data.lessons);
+    console.log(data);
+
+    // displayLinks(data.lessons);
+
 }
+
+getLinksList();
