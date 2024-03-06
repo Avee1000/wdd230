@@ -114,8 +114,16 @@ main ul a:hover {
 
 main ul li{
     list-style-type: none;
-    margin-left: -1rem;  
-    margin-right: .8rem;
+    margin: .5rem;
+    margin-left: -1rem;
+}
+
+main ul li:first-of-type{
+    margin-top: 1.5rem;
+}
+
+main ul li:last-of-type{
+    margin-bottom: 1.5rem;
 }
 
 .hero{
