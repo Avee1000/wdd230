@@ -105,16 +105,17 @@ main ul{
 }
 
 main ul a{
-    color: rgb(0, 0, 0);
-}
-
-main ul a:hover {
     color: blue;
 }
 
-main ul li::marker{
-    content: "🍕";
-    font-size: 12px;
+main ul a:hover {
+    color: rgb(30, 30, 101);
+}
+
+main ul li{
+    list-style-type: none;
+    margin-left: -1rem;  
+    margin-right: .8rem;
 }
 
 .hero{

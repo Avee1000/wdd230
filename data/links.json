@@ -1,7 +1,7 @@
 {
     "lessons": [
         {
-            "lesson": "02",
+            "week": "02",
             "links": [
                 {
                     "url": "lesson02/design.html",
@@ -10,6 +10,84 @@
                 {
                     "url": "lesson02/design-principles.html",
                     "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "week": "03",
+            "links": [
+                {
+                    "url": "lesson03/images/exercise.png",
+                    "title": "Combinator exercises"
+                },
+                {
+                    "url":"https://codepen.io/Avee1000/pen/KKEqEwa",
+                    "title": "CodePen Pseudo-elements"
+                },
+                {
+                    "url":"https://codepen.io/Avee1000/pen/GReELRN",
+                    "title": "CodePen Responsive Menu"
+                }
+            ]
+        },
+        {
+            "week": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html" ,
+                    "title": "B.O.M Favorite Chapters"
+                }
+            ]
+        },
+        {
+            "week": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP Image" 
+                },
+                {
+                    "url": "lesson06/responsive-images.html" ,
+                    "title": "Responsive images"
+                }
+            ]
+        },
+        {
+            "week": "07" ,
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "lesson07/bom.html" ,
+                    "title": "B.O.M Favorite chapters update"
+                }
+            ]
+        },
+        {
+            "week": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "./form-start/index.html",
+                    "title": "Web Forms"
+                }
+            ]
+        },    
+        {
+            "week": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON file"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"
                 }
             ]
         }
