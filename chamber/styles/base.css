@@ -625,6 +625,10 @@ hr{
     color: white;
 }
 
+#directory-main{
+    margin: 2rem;
+}
+
 
 /*/////////////////////////////////////////////////////////////////*/    
 
@@ -762,5 +766,16 @@ hr{
         word-break: keep-all;
     }
 
+
+
+
+    /*-------------------------------DIRECTORY-------------------------------------*/
+
+
+
+    #directory-main{
+        display: block;
+        margin: 2rem;
+    }
 
 }

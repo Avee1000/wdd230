@@ -1,0 +1,68 @@
+{
+    "companies": [
+        {
+            "name": "conpany 1",
+            "addess": "address 1",
+            "phone": "1111111111",
+            "url" : "url",
+            "image": "images/black.png",
+            "memberLevel": "Gold"
+        },
+        {
+            "name": "conpany 1",
+            "addess": "address 1",
+            "phone": "1111111111",
+            "url" : "url",
+            "image": "images/black.png",
+            "memberLevel": "Gold"
+        },
+        {
+            "name": "conpany 1",
+            "addess": "address 1",
+            "phone": "1111111111",
+            "url" : "url",
+            "image": "images/black.png",
+            "memberLevel": "Gold"
+        },
+        {
+            "name": "conpany 1",
+            "addess": "address 1",
+            "phone": "1111111111",
+            "url" : "https://www.dimensiondata.com/",
+            "image": "images/black.png",
+            "memberLevel": "Gold"
+        },
+        {
+            "name": "conpany 1",
+            "addess": "address 1",
+            "phone": "1111111111",
+            "url" : "url",
+            "image": "images/black.png",
+            "memberLevel": "Gold"
+        },
+        {
+            "name": "conpany 1",
+            "addess": "address 1",
+            "phone": "1111111111",
+            "url" : "url",
+            "image": "images/black.png",
+            "memberLevel": "Gold"
+        },
+        {
+            "name": "conpany 1",
+            "addess": "address 1",
+            "phone": "1111111111",
+            "url" : "url",
+            "image": "images/black.png",
+            "memberLevel": "Gold"
+        },
+        {
+            "name": "conpany 1",
+            "addess": "address 1",
+            "phone": "1111111111",
+            "url" : "url",
+            "image": "images/black.png",
+            "memberLevel": "Gold"
+        }
+    ]
+}

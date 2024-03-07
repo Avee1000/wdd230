@@ -240,4 +240,13 @@
         display: none;
     }
 
+
+    /*----------------------------------DIRECTORY-----------------------------------*/
+
+
+    #directory-main{
+        display: block;
+        margin: 2rem;
+        position: relative;
+    }
 }
