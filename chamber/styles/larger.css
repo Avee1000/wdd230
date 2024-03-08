@@ -241,12 +241,44 @@
     }
 
 
+
+
     /*----------------------------------DIRECTORY-----------------------------------*/
 
 
-    #directory-main{
-        display: block;
+
+
+    .grid #cards{
+        background-color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 4px 4px 10px 4px #757575;
+    }
+
+    .grid #section-card{
+        background-color: #ffffff;
         margin: 2rem;
-        position: relative;
+    }
+
+    .list #cards{
+        margin: 0 3rem;
+    }
+
+    .list #section-card{
+        display: grid;
+        place-items: center;
+        box-shadow: 2px 2px 7px 1px #999999 ;
+        padding: 2rem 1rem;
+    }
+
+    .dark-mode  #cards{
+        background-color: black;
+    }
+
+    .dark-mode #section-card{
+        box-shadow: 2px 2px 6px 1px inset rgb(74, 73, 73) ;
+    }
+
+    .dark-mode .list #section-card{
+        box-shadow: none;
     }
 }
