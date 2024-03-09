@@ -20,8 +20,8 @@ const displayMembers = (members) => {
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', member.name);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('height', '100');
-        logo.setAttribute('width', '80');
+        logo.setAttribute('height', '150');
+        logo.setAttribute('width', '200');
 
         const companyName = document.createElement("h2");
         companyName.innerHTML = `${member.name}`;
@@ -29,6 +29,7 @@ const displayMembers = (members) => {
 
         const companyAddress = document.createElement("p");
         companyAddress.innerHTML = `${member.address}`;
+        companyAddress.style.textAlign = "center";
 
         const companyPhone = document.createElement("p");
         companyPhone.innerHTML = `${member.phone}`;
