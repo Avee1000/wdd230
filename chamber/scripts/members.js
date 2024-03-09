@@ -29,7 +29,6 @@ const displayMembers = (members) => {
 
         const companyAddress = document.createElement("p");
         companyAddress.innerHTML = `${member.address}`;
-        companyAddress.style.textAlign = "center";
 
         const companyPhone = document.createElement("p");
         companyPhone.innerHTML = `${member.phone}`;
@@ -37,6 +36,11 @@ const displayMembers = (members) => {
         const companySite = document.createElement("a");
         companySite.setAttribute('href', member.url)
         companySite.innerHTML = `${member.url}`
+
+        if (member.name == "Oando PLC") {
+            logo.style.height = "100px";
+            logo.style.width = "230px";
+        }
 
         section.append(logo, companyName, companyAddress, companyPhone, companySite);
         cards.appendChild(section);
@@ -53,7 +57,7 @@ document.getElementById("grid").addEventListener("click", () => {
 });
 
 document.querySelector(".list").addEventListener("click", () => {
-
+    
     document.body.classList.toggle("list");
     document.body.classList.remove("grid");
 
