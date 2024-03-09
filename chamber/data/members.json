@@ -1,67 +1,59 @@
 {
     "companies": [
         {
-            "name": "conpany 1",
+            "name": "Dangote Co.",
             "address": "address 1",
             "phone": "1111111111",
-            "url" : "url",
-            "image": "images/black.png",
+            "url" : "https://dangote.com/",
+            "image": "images/directory/dangote.webp",
             "memberLevel": "Gold"
         },
         {
-            "name": "conpany 1",
+            "name": "First Bank",
             "address": "address 1",
             "phone": "1111111111",
-            "url" : "url",
-            "image": "images/black.png",
+            "url" : "https://www.firstbanknigeria.com/",
+            "image": "images/directory/firstbank.webp",
             "memberLevel": "Gold"
         },
         {
-            "name": "conpany 1",
+            "name": "Jumia LTD",
             "address": "address 1",
             "phone": "1111111111",
-            "url" : "url",
-            "image": "images/black.png",
+            "url" : "https://maticefastfood.com/",
+            "image": "images/directory/jumia.webp",
             "memberLevel": "Gold"
         },
         {
-            "name": "conpany 1",
+            "name": "Mat-Ice",
             "address": "address 1",
             "phone": "1111111111",
             "url" : "https://www.dimensiondata.com/",
-            "image": "images/black.png",
+            "image": "images/directory/matice.webp",
             "memberLevel": "Gold"
         },
         {
-            "name": "conpany 1",
+            "name": "MTN",
             "address": "address 1",
             "phone": "1111111111",
-            "url" : "url",
-            "image": "images/black.png",
+            "url" : "https://www.mtn.ng/",
+            "image": "images/directory/mtn.webp",
             "memberLevel": "Gold"
         },
         {
-            "name": "conpany 1",
+            "name": "ShopRite",
             "address": "address 1",
             "phone": "1111111111",
-            "url" : "url",
-            "image": "images/black.png",
+            "url" : "https://shoprite.ng/",
+            "image": "images/directory/shoprite.webp",
             "memberLevel": "Gold"
         },
         {
-            "name": "conpany 1",
+            "name": "Oando LTD",
             "address": "address 1",
             "phone": "1111111111",
-            "url" : "url",
-            "image": "images/black.png",
-            "memberLevel": "Gold"
-        },
-        {
-            "name": "conpany 1",
-            "address": "address 1",
-            "phone": "1111111111",
-            "url" : "url",
-            "image": "images/black.png",
+            "url" : "https://www.oandoplc.com/",
+            "image": "images/directory/oando.webp",
             "memberLevel": "Gold"
         }
     ]
