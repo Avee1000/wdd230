@@ -35,6 +35,7 @@ const displayMembers = (members) => {
 
         const companySite = document.createElement("a");
         companySite.setAttribute('href', member.url)
+        companySite.setAttribute('target', '_blank')
         companySite.innerHTML = `${member.url}`
 
         if (member.name == "Oando PLC") {
