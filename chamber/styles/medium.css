@@ -127,6 +127,13 @@
         margin: 3rem auto;
     }
 
+    #spot-ad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .dark-mode body{
         background-color: #000000;
     }
