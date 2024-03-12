@@ -4,7 +4,7 @@ const weatherIcon = document.getElementById('weather-icon');
 
 const captionDesc = document.querySelector('figcaption');
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.7&lon=6.6&appid=61a0af6c0abff327e78c6ce5bfbb578c";
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&appid=61a0af6c0abff327e78c6ce5bfbb578c";
 
 async function apiFetch() {
     try {
@@ -24,7 +24,7 @@ apiFetch();
 
 function displayWeather(data) {
 
-    currentTemp.innerHTML = `${data.weather[0].id.toFixed(3)}`;
+    currentTemp.innerHTML = `${data.main.temp.toFixed(2)}`;
 
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
     let desc = data.weather[0].description;
