@@ -179,7 +179,17 @@ main ul li:last-of-type{
     border-top-right-radius: 5px;
 }
 
+.info{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
 
+.info p{
+    margin-left: 10px;
+}
 
 footer {
     height: auto;
