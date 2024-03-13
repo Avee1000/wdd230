@@ -15,8 +15,6 @@
 // let windChill = windchill(newTemperature, newSpeed);
 // chill.innerHTML += windChill.toFixed() + `&deg;F`;
 
-const banner = document.getElementById("banner");
-
 const currentTemp = document.getElementById('current-temp');
 
 const currentDesc = document.getElementById('description');
@@ -25,7 +23,7 @@ const weatherIcon = document.getElementById('weather-icon');
 
 const div = document.querySelector('#more-info');
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=6.32691&lon=5.60750&units=imperial&APPID=61a0af6c0abff327e78c6ce5bfbb578c";
+const url = "https://api.openweathermap.org/data/2.5/forecast?lat=6.32691&lon=5.60750&units=imperial&APPID=61a0af6c0abff327e78c6ce5bfbb578c";
 
 async function apiFetch() {
     try {
@@ -33,6 +31,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             displayWeather(data);
+
         } else {
             throw Error(await response.text());
         }
@@ -45,48 +44,58 @@ apiFetch();
 
 function displayWeather(data) {
 
-    currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
+    const weather = data.list[0];
 
-    const desc = data.weather[0].description;
+    currentTemp.innerHTML = `${weather.main.temp.toFixed(0)}&deg;F`;
+
+    const desc = weather.weather[0].description;
 
     currentDesc.innerHTML = `- ${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
 
     const humidity = document.createElement('p');
-    humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
+    humidity.innerHTML = `Humidity: ${weather.main.humidity}%`;
     div.appendChild(humidity);
 
     const windSpeed = document.createElement('p');
-    windSpeed.innerHTML = `Wind Speed: ${data.wind.speed}km/h`;
+    windSpeed.innerHTML = `Wind Speed: ${weather.wind.speed}km/h`;
     div.appendChild(windSpeed);
 
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    const iconsrc = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', "weather");    
+    weatherIcon.setAttribute('alt', "weather");
+
+
+    //FORECAST FOR 3 DAYS
+
+
+    let allDays = [];
+    allDays.push(data.list[8]);
+    allDays.push(data.list[16]);
+    allDays.push(data.list[24]);
+
+    allDays.forEach((day) => {
+
+        const section = document.createElement('section');
+
+        const date = document.createElement('h4');
+        date.innerHTML = `${day.dt_txt.slice(0, 10)}`;
+
+        const dayTemp = document.createElement('p');
+        dayTemp.innerHTML =`${day.main.temp.toFixed(0)}&deg;F`;
+
+        const forecastIcon = document.createElement('img');
+        const icon = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`
+        forecastIcon.setAttribute('src', icon);
+        forecastIcon.setAttribute('alt', "forecast-image"); 
+
+
+        const upper = day.weather[0].description; 
+        const dayDesc = document.createElement('p');
+        dayDesc.innerHTML = `${upper.charAt(0).toUpperCase() + upper.slice(1)}`;
+
+        section.append(date, dayTemp, forecastIcon, dayDesc);
+        document.querySelector('#forecast').appendChild(section);
+        
+    }); 
+
 }
-
-window.addEventListener("load", function () {
-
-    let today = new Date();
-    let day = today.getDay();
-  
-    if (day >= 1 && day <= 3) {
-
-        const prompt = document.getElementById('prompt');
-        prompt.setAttribute('class', 'prompt');
-        prompt.style.position = "fixed";
-        prompt.style.padding = "10px";
-        prompt.style.transition = "1s";
-    
-        banner.style.display = "flex";
-
-        document.querySelector('.class').addEventListener('click', function () { 
-
-            banner.style.display = "none";
-
-        });
-    }
-
-    // const button = document.createElement('button');
-    // button.textContent = `❌`;
-    // button.setAttribute('type', 'submit');
-});
