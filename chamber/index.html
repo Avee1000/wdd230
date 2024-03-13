@@ -47,6 +47,7 @@
         </nav>
 
         <div id="hero-box">
+            <div id="banner"></div>
             <div class="hero">
                 <picture>
                   <source srcset="images/hero-small.webp" media="(max-width: 640px)">
@@ -81,10 +82,16 @@
 
             <section class="card">
                 <h2>WEATHER</h2>
-                <p id="temperature">Temperature: </p>
-                <p id="speed">Wind Speed: </p>
-                <p id="chill">Wind Chill: </p>
+                <div class="info">
+                    <img id="weather-icon" src="" alt="">
+                    <p> <span id="current-temp"></span> <span id="description"></span></p>
+                </div>
 
+                <div id="more-info"></div>
+
+                <div id="forecast">
+                    <h3>3 Days Forecast</h3>
+                </div>
             </section>
 
             <section id="spotlight">
