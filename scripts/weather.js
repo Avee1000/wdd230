@@ -24,7 +24,7 @@ apiFetch();
 
 function displayWeather(data) {
 
-    currentTemp.innerHTML = `${data.main.temp.toFixed(0)}`;
+    currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
 
     const desc = data.weather[0].description;
 
