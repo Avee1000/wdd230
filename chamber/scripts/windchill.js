@@ -15,6 +15,8 @@
 // let windChill = windchill(newTemperature, newSpeed);
 // chill.innerHTML += windChill.toFixed() + `&deg;F`;
 
+const banner = document.getElementById("banner");
+
 const currentTemp = document.getElementById('current-temp');
 
 const currentDesc = document.getElementById('description');
@@ -62,4 +64,29 @@ function displayWeather(data) {
     weatherIcon.setAttribute('alt', "weather");    
 }
 
-document.getElementById("banner").addEventListener("load")
+window.addEventListener("load", function () {
+
+    let today = new Date();
+    let day = today.getDay();
+  
+    if (day >= 1 && day <= 3) {
+
+        const prompt = document.getElementById('prompt');
+        prompt.setAttribute('class', 'prompt');
+        prompt.style.position = "fixed";
+        prompt.style.padding = "10px";
+        prompt.style.transition = "1s";
+    
+        banner.style.display = "flex";
+
+        document.querySelector('.class').addEventListener('click', function () { 
+
+            banner.style.display = "none";
+
+        });
+    }
+
+    // const button = document.createElement('button');
+    // button.textContent = `❌`;
+    // button.setAttribute('type', 'submit');
+});

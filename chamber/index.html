@@ -25,6 +25,10 @@
 
 <body>
     <div id="content">
+        <div id="banner">
+            <p id="prompt">Join us in our chamber of commerce meet and greet on Wednesday at 7:00 p.m. </p>
+            <button type="submit" class="delete">❌</button>
+        </div>
         <header>
             <a id="logo_link" href="index.html">
                 <img class='logo' src="images/white.webp" alt="Chamber logo">
@@ -45,9 +49,8 @@
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
-
+        
         <div id="hero-box">
-            <div id="banner"></div>
             <div class="hero">
                 <picture>
                   <source srcset="images/hero-small.webp" media="(max-width: 640px)">
@@ -142,6 +145,14 @@
                 <p>&copy; 2024 - Osamagumwende Flourish Idahosa-Sunny</p>
                 <p>WDD230 Chamber Project</p>
                 <p id="last-modified">LAST MODIFIED: </p>
+                <script>
+                    const modified = document.getElementById('last-modified');
+                    modified.style.color = 'white';
+
+                    let lastMod = new Date(document.lastModified);
+
+                    modified.innerHTML += lastMod;
+                </script>
             </div>
 
             <div class="social">
@@ -156,7 +167,6 @@
             </div>
         </footer>
         
-        <script src="scripts/getdates.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/darkmode.js"></script>
         <script src="scripts/windchill.js"></script>
