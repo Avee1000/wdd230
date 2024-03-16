@@ -856,7 +856,7 @@ hr{
         width: 80%;
     }
 
-    .card:nth-last-of-type(){
+    .card:nth-of-type(3){
         width: 90%;
     }
 
