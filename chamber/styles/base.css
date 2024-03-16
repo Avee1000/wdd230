@@ -279,6 +279,7 @@ section.card {
 
 .info{
     display: flex;
+    flex-direction: row-reverse;
     text-align: center;
     align-items: center;
     justify-content: center;

@@ -42,13 +42,13 @@ apiFetch();
 
 function displayWeather(data) {
 
+    const weather = data.list[0];
+
     const iconsrc = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
     const weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', "weather");
-    div.appendChild(weatherIcon);
-
-    const weather = data.list[0];
+    document.querySelector('.info').appendChild(weatherIcon);
 
     currentTemp.innerHTML = `${weather.main.temp.toFixed(0)}&deg;F`;
 
