@@ -21,7 +21,7 @@ const currentDesc = document.getElementById('description');
 
 const div = document.querySelector('#more-info');
 
-const url = "https://api.openweaconstthermap.org/data/2.5/forecast?lat=6.32691&lon=5.60750&units=imperial&APPID=61a0af6c0abff327e78c6ce5bfbb578c";
+const url = "https://api.openweathermap.org/data/2.5/forecast?lat=6.32691&lon=5.60750&units=imperial&APPID=61a0af6c0abff327e78c6ce5bfbb578c";
 
 async function apiFetch() {
     try {
