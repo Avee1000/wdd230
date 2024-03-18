@@ -323,15 +323,18 @@ section.card {
     margin: 1rem;
     width: 90%;
     border: 2px solid;
+    padding-bottom: 1rem;
 }
 
 #spot-ad article h3{
+    font-family: var(--paragraph-font);
     padding: 1rem;
 }
 
 #spot-ad article p{
-    padding: 1rem;
+    padding: .5rem;
 }
+
 
 footer {
     display: flex;
