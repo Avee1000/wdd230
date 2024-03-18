@@ -22,7 +22,7 @@
             "phone": "+234 201 888 1106",
             "url" : "https://www.jumia.com.ng/",
             "image": "images/directory/work.webp",
-            "memberLevel": "Gold"
+            "memberLevel": "Silver"
         },
         {
             "name": "Mat-Ice",
@@ -30,7 +30,7 @@
             "phone": "+234 0816 338 5534",
             "url" : "https://maticefastfood.com/",
             "image": "images/directory/matice.webp",
-            "memberLevel": "Gold"
+            "memberLevel": "Bronze"
         },
         {
             "name": "MTN",
@@ -38,7 +38,7 @@
             "phone": "+234 803 100 0300",
             "url" : "https://www.mtn.ng/",
             "image": "images/directory/mtn.webp",
-            "memberLevel": "Gold"
+            "memberLevel": "Silver"
         },
         {
             "name": "ShopRite",
@@ -46,7 +46,7 @@
             "phone": "+234 1330 1700",
             "url" : "https://shoprite.ng/",
             "image": "images/directory/shoprite.webp",
-            "memberLevel": "Gold"
+            "memberLevel": "Silver"
         },
         {
             "name": "Oando PLC",
@@ -54,7 +54,7 @@
             "phone": "+234-1-2702400",
             "url" : "https://www.oandoplc.com/",
             "image": "images/directory/oando.webp",
-            "memberLevel": "Gold"
+            "memberLevel": "Bronze"
         }
     ]
 }
