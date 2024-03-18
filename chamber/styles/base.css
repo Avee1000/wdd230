@@ -172,7 +172,7 @@ nav {
 
 .delete{
     border: none;
-    background-color: #000000;
+    background-color: white;
     padding: 2px;
     position: fixed;
     z-index: 1;
@@ -1010,7 +1010,7 @@ hr{
     }
 
     .delete{
-        left: 25rem;
+        left: 22rem;
     }
 
     #forecast section *{
