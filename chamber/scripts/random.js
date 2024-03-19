@@ -23,13 +23,22 @@ function displayRanMembers(companies) {
 
     const needed = [];
 
+    const set = new Set();
+
     for (let i = 0; i < companies.length; i++) {
         if (companies[i].memberLevel === "Gold" || companies[i].memberLevel === "Silver") {
             needed.push(companies[i]); 
         }
     }
 
-    needed.forEach((x) => {
+    while (set.size < 3) {
+        const ranNum = Math.floor(Math.random() * needed.length);
+        set.add(ranNum);
+    }
+
+    set.forEach((index) => {
+        
+        const x = needed[index];
         const article = document.createElement("article");
 
         const name = document.createElement("h3");
@@ -57,4 +66,6 @@ function displayRanMembers(companies) {
         article.append(name, logo, address, phone, url );
         spotlight.appendChild(article);
     });
+        
  }
+
