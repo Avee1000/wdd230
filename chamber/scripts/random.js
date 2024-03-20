@@ -59,7 +59,6 @@ function displayRanMembers(companies) {
         
         const url = document.createElement("a");
         url.innerHTML = `${x.url}`;
-        url.style.color = "blue";
         url.setAttribute('href', x.url)
         url.setAttribute('target', '_blank')       
 

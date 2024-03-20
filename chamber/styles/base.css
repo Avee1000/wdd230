@@ -309,7 +309,6 @@ section.card {
 
 #spotlight{
     position: relative;
-    overflow: hidden;
     text-align: center;
     margin: 25px auto;
     width: 90%;
@@ -321,16 +320,20 @@ section.card {
 #spotlight h2{
     color: var(--accent2-color);
     background-color: var(--accent1-color);
+    font-size: 40px;
 }
 
 #spot-ad article{
+    background-color: #fffefec2;
+    color: var(--accent2-color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px rgb(33, 33, 33);
     position: relative;
     overflow: hidden;
     text-align: center;
     margin: 1rem;
     width: 90%;
-    border: 2px solid;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 #spot-ad article h3{
@@ -339,7 +342,7 @@ section.card {
 }
 
 #spot-ad article p{
-    padding: .5rem;
+    padding: .2rem 1rem;
 }
 
 footer {
@@ -410,9 +413,8 @@ ul{
     color: var(--primary-color);
 }
 
-.dark-mode #spotlight p{
-    background-color: #1b1b1b;
-    color: var(--primary-color);
+.dark-mode #spot-ad a{
+    color: black;
 }
 
 .dark-mode .card{
@@ -870,7 +872,14 @@ hr{
     }
 
     #spotlight{
+        height: auto;
         margin: 3rem auto;
+    }
+
+    #spot-ad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .switch{
