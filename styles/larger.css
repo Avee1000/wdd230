@@ -77,6 +77,12 @@
         border-radius: 5px;
     }
 
+    .active{
+        background-color: white;
+        color: black !important;
+        opacity: .5;    
+    }
+
 }
 
 @media screen and (min-width: 1000px){
@@ -173,5 +179,11 @@
         margin-bottom: 25px;
         padding: 0;
         border-radius: 5px;
+    }
+
+    .active{
+        background-color: white;
+        color: black !important;
+        opacity: .5;    
     }
 }

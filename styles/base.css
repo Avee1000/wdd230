@@ -259,7 +259,12 @@ footer  p{
         border-radius: 5px;
     }
 
-    
+    .active{
+        background-color: white;
+        color: black !important;
+        opacity: .5;    
+    }
+
 }
 
 
