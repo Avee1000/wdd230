@@ -70,6 +70,14 @@
                 <p>&copy; 2024 - Osamagumwende Flourish Idahosa-Sunny</p>
                 <p>WDD230 Chamber Project</p>
                 <p id="last-modified">LAST MODIFIED: </p>
+                <script>
+                    const modified = document.getElementById('last-modified');
+                    modified.style.color = 'white';
+
+                    let lastMod = new Date(document.lastModified);
+
+                    modified.innerHTML += lastMod;
+                </script>
             </div>
 
             <div class="social">
@@ -83,7 +91,8 @@
                     <i class="fa-brands fa-youtube"></i></a>
             </div>
         </footer>
-        
+
+        <script src="scripts/active.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/darkmode.js"></script>
         <script src="scripts/members.js"></script>

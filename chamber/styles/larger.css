@@ -273,4 +273,9 @@
     .dark-mode .list #section-card{
         box-shadow: none;
     }
+
+    .active{
+        transition: 1s;
+        border-bottom: 3px solid #fff8f8 !important; 
+    }
 }

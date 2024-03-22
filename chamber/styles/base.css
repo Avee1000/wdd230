@@ -25,6 +25,7 @@
     margin: 0 auto
 } */
 
+
 body{
     background-color: var(--primary-color);
     margin: auto;
@@ -147,13 +148,11 @@ nav {
 .navigation a{
     text-decoration: none;
     font-family: var(--heading-font);
-    color: white;
     display: block;
     transition: 0.5s;
     font-size: 22px;
     padding: 13px;
     cursor: pointer;    
-
 }
 
 .navigation li {
@@ -850,10 +849,12 @@ hr{
     }
 
     .navigation a {
+        color: white;
         transition: 0.7s ease;
     }
     
     .navigation a:hover {
+        color: black;
         background-color: #dad9d9 ;
     }
 
@@ -1034,5 +1035,10 @@ hr{
     #forecast section *{
         font-size: 18px;
         margin: 0 1rem;
+    }
+    
+    .active{
+        color: black !important;
+        background-color: #dad9d9 ;
     }
 }
