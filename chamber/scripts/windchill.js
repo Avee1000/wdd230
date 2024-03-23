@@ -48,6 +48,8 @@ function displayWeather(data) {
     const weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', "weather");
+    weatherIcon, setAttribute('width', '50px');
+    weatherIcon, setAttribute('height', '50px');
     document.querySelector('.info').appendChild(weatherIcon);
 
     currentTemp.innerHTML = `${weather.main.temp.toFixed(0)}&deg;F`;
@@ -87,6 +89,9 @@ function displayWeather(data) {
         const icon = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`
         forecastIcon.setAttribute('src', icon);
         forecastIcon.setAttribute('alt', "forecast-image"); 
+        forecastIcon, setAttribute('width', '50px');
+        forecastIcon, setAttribute('height', '50px');
+
 
 
         const upper = day.weather[0].description; 

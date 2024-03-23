@@ -48,8 +48,10 @@ function displayRanMembers(companies) {
         logo.setAttribute('src', x.image);
         logo.setAttribute('alt', x.name);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('height', '50');
-        logo.setAttribute('width', '80');
+        // logo.setAttribute('height', '50');
+        // logo.setAttribute('width', '80');
+        logo.classList.add('thumbnail'); // Apply a class for styling
+
         
         const address = document.createElement("p");
         address.innerHTML = `${x.address}`;

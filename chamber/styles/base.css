@@ -360,6 +360,13 @@ footer {
     border-bottom: 2px solid var(--primary-color);
 }
 
+#logo-area img{
+    max-width: 150px; /* Set maximum width */
+    max-height: 200px; /* Set maximum height */
+    width: auto;
+    height: auto;
+}
+
 #contact-area{
     padding: 2rem 0;
     width: 90%;
@@ -386,17 +393,18 @@ ul{
 }
 
 .social a{
-    background-color: var(--primary-color);
     border-radius: 70px;
     padding: .5rem;
     margin: .5rem;
-    color: var(--accent2-color);
     font-size: 1rem;
 }
 
 .social a:hover{
-    background-color: var(--accent1-color);
     color: var(--accent2-color);
+}
+
+.social img{
+    color: white;
 }
 
 .dark-mode{
@@ -493,6 +501,13 @@ figcaption{
     margin-top: 10px;
     border-bottom: 1px solid white;
     background-color: #1b1b1b;
+}
+
+.thumbnail {
+    max-width: 200px; /* Set maximum width */
+    max-height: 200px; /* Set maximum height */
+    width: auto;
+    height: auto;
 }
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,10 +27,11 @@
         </div>
         <header>
             <a id="logo_link" href="index.html">
-                <img class='logo' src="images/white.webp" alt="Chamber logo">
+                <img class='logo' src="images/white.webp" alt="Chamber logo" width="100"
+                height="112">
             </a>
             <h1>Benncima Chamber of Commerce</h1>
-            <label class="switch">
+            <label for="myCheckbox" class="switch">
                 <input type="checkbox" id="myCheckbox">
                 <span class="slider round"></span>
             </label>
@@ -39,10 +40,10 @@
         <a id="menu"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html" class="link">Home</a></li>
-                <li><a href="discover.html"  class="link">Discover</a></li>
-                <li><a href="directory.html"  class="link">Directory</a></li>
-                <li><a href="join.html"  class="link">Join</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html" >Discover</a></li>
+                <li><a href="directory.html" >Directory</a></li>
+                <li><a href="join.html" >Join</a></li>
             </ul>
         </nav>
         
@@ -101,7 +102,8 @@
 
         <footer>
             <div id="logo-area">
-                <img class='logo' src="images/white.webp" alt="Chamber logo">
+                <img class='logo' src="images/white.webp" alt="Chamber logo" width="328"
+                height="294">
                 <p>Benncima Chamber of Commerce</p>
             </div>
 
@@ -126,17 +128,6 @@
                     modified.innerHTML += lastMod;
                 </script>
             </div>
-
-            <div class="social">
-                <a href="https://www.facebook.com/benccima11" target="_blank">
-                    <i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.twitter.com/benccima11" target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/benccima11" target="_blank">
-                    <i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/benccima11" target="_blank">
-                    <i class="fa-brands fa-youtube"></i></a>
-            </div>
         </footer>
         
         <script src="scripts/hamburger.js"></script>
@@ -144,8 +135,6 @@
         <script src="scripts/windchill.js"></script>
         <script src="scripts/banner.js"></script>
         <script src="scripts/random.js"></script>
-        <script src="scripts/active.js"></script>
-
 
     </div>
 </body>
