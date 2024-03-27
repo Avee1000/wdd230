@@ -82,7 +82,7 @@ header {
     display: block;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #b7b5b5;
 }
 
 #searchbox{
@@ -199,9 +199,55 @@ nav{
 .navigation li i{
     font-size: 23px;
 }
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
 main{
-    height: 1600px;
+    height: auto;
 }
+
+#first-section{
+
+}
+
+#weather-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map iframe{
+    border-radius: 5px;
+
+}
+
+.windchill{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: orangered 1px solid;
+}
+
+.windchill *{
+    margin: 0;
+}
+
+.weatherTemp, .weatherMain{
+    display: flex;
+    align-items: center;
+}
+
+.weatherTemp, 
+.weatherMain,
+.windchill h2{
+    margin-left: 1rem;
+}
+
+
+
+
+
 
 #backToTop {
     display: grid;
@@ -209,7 +255,7 @@ main{
     height: 60px;
     width: 100%;
     background-color: #0a4d74;
-  }
+}
 
 #backToTop button{
     display: block;
