@@ -31,7 +31,7 @@ body, html {
     background-color: rgb(0,0,0); /* Black fallback color */
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden;
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    transition: 0.5s;
 }
 
 .overlay-content {
@@ -143,15 +143,11 @@ input:focus{
 }
 
 nav{
-    display: flex;
-    /* justify-content: space-around; */
-    justify-self: end;
-    align-items: center;
-    margin-right: 50px;
+    background-color: #A8DADC;
 }
 
-nav {
-    position: relative;
+.delete{
+    display: none;
 }
 
 #div{
@@ -162,28 +158,19 @@ nav {
 
 /*-----------------------------------------------------------------------------------------------*/
 
+
 #menu::before {
     content: "\f0c9";
     font-family: 'Font Awesome 6 Free';
     color: black;
-    font-size: 2rem;
+    font-size: 25px;
     font-weight: 900; /*always use this after using font awesome unicodes */
+    cursor: pointer;
 }
 
-#menu.show::before {
-    content: "\f00d";
-    font-family: 'Font Awesome 6 Free';
-    color: black;
-    font-size: 2rem;
-    font-weight: 900;
-}
 
-nav {
-    background-color: #A8DADC;
-}
 
 .navigation{
-    display: flex;
     list-style: none;
     margin: auto;
     padding: 0;
@@ -193,18 +180,25 @@ nav {
 	display: none;
 }
 
+.navigation li *{
+    padding: 5px 3px;
+}
+
 .navigation a{
-    color: white;
+    place-items: center;
     display: block;
     text-decoration: none;
     font-family: 'Belanosima', Times, serif;
     font-weight: lighter;
     transition: 0.5s;
     font-size: 24px;
-    padding: 10px;
-    cursor: pointer;    
+    cursor: pointer;
+    color: black;
 }
 
+.navigation li i{
+    font-size: 23px;
+}
 main{
     height: 1600px;
 }
@@ -259,4 +253,57 @@ footer{
 	padding: 8px;
     background-color: #072537;
 
+}
+
+@media screen and (max-width: 640px) {
+
+    #menu{
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0;   
+        padding: 10px; 
+        border-radius: 2px;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        width: 100%;
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); 
+        overflow: hidden;
+        transition: 0.5s; /
+    }
+
+    .navigation{
+        position: relative;
+        bottom: 150px;
+    }
+
+    .navigation li a{
+        margin: 1rem;
+        color: white;
+    }
+    
+    .delete{
+        position: relative;
+        display: block;
+        color: white;
+    }
+
+    .delete i{
+        cursor: pointer;
+        float: right;
+        margin: 1rem 2rem 0 0;
+    }
 }

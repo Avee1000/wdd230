@@ -19,36 +19,30 @@
     .navigation{
         display: flex;
         justify-content: space-around;
-        padding: 0.5rem 0;
     }
 
     .navigation li{
         display: block;
+        flex: 1 1 auto;
     }
 
     .navigation a {
         text-align: center;
         color: rgb(0, 0, 0);
         font-size: 1.1rem;
+        padding: 1rem 1rem;
+        transition: border-bottom 0.7s ease;
     }
 
-    .navigation a {
-    border-bottom: 2px solid transparent; /*Initially transparent*/
-    padding-bottom: 5px; /* Add some padding for better visual */
-    transition: border-bottom 0.7s ease;
-    }
-
-    .navigation li i{
-        padding:  0 12px;
-    }
-
-    .navigation a:hover {
-        border-bottom: 2px solid #fff8f8; /* Change the color to your desired color */
+    .navigation li:hover {
+        transition: all 1s;
+        background-color: #74b8ba;
     }
 
     .active{
         transition: 1s;
-        border-bottom: 3px solid #fff8f8 !important; 
+        background-color: black;
+        color: white !important;
     }
 
 }

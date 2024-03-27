@@ -4,12 +4,13 @@
     #menu{
         display: none;
     }
-    nav{
-        display: flex;
+
+    /* nav{
+        display: block;
         align-items: center;
         justify-content: center;
         width: 100%;
-    }
+    } */
     
     .navigation{
         display: flex;
@@ -19,25 +20,29 @@
     }
 
     .navigation a{
-        color: white;
+        padding: 1rem 2.5rem;
         font-size: 1.2rem;
     }
 
     .navigation li{
         display: block;
-        padding: .8rem 2.5rem;
     }
 
     .navigation a {
         border-bottom: 2px solid transparent; /*Initially transparent*/
-        padding-bottom: 5px; 
         transition: border-bottom 0.7s ease;
-        }
-    
-    .navigation a:hover {
-        border-bottom: 2px solid #fff8f8;
     }
-
+    
+    .navigation li:hover {
+        transition: all 1s;
+        background-color: #74b8ba;
+    }
+    
+    .active{
+        transition: 1s;
+        background-color: black;
+        color: white !important;
+    }
 
 
 }
