@@ -44,5 +44,12 @@
         color: white !important;
     }
 
+    #first-section{
+        width: 70%;
+    }
+
+    .forecastContainer{
+        width: 40%;
+    }
 
 }

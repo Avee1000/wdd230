@@ -20,6 +20,52 @@ body, html {
     padding: 0 auto;
 }
 
+#banner{
+    display: block;
+    background-color: #000000;
+    padding: 1rem;
+    transition: all .5s;
+    color: white;
+    height: 35px;
+}
+
+.banner-fixed {
+    display: block;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1; 
+    width: 100%;
+}
+
+.banner-fixed .close i{
+    position: relative;
+    left: -32px;
+}
+
+.banner-fixed #prompt{
+    font-size: 35px;
+    transition: all 2s;
+}
+
+#prompt{
+    margin: 2rem;
+    display: inline;
+    font-family: 'Belanosima';
+    font-size:  30px;
+    transition: all 2s ease-in-out;
+}
+
+.close{
+    margin: 0 1rem 0 0;
+}
+
+.close i{
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+}
+
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 100%;
@@ -28,8 +74,7 @@ body, html {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    background-color: rgb(0,0,0, 0.95); 
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -150,12 +195,6 @@ nav{
     display: none;
 }
 
-#div{
-    background-color: #0a4d74;
-    width: 100%;
-    height: 50px;
-}
-
 /*-----------------------------------------------------------------------------------------------*/
 
 
@@ -167,8 +206,6 @@ nav{
     font-weight: 900; /*always use this after using font awesome unicodes */
     cursor: pointer;
 }
-
-
 
 .navigation{
     list-style: none;
@@ -207,7 +244,10 @@ main{
 }
 
 #first-section{
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2px 1fr;
+    margin: auto;
 }
 
 #weather-container{
@@ -216,24 +256,51 @@ main{
     align-items: center;
 }
 
-.map iframe{
-    border-radius: 5px;
+#line {
+    grid-row: 2/3;
+    display: block;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin: 0rem auto;
+    border-bottom: rgba(107, 107, 107, 0.3) 1px solid;
+}
 
+.map{
+    width: 180%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map iframe{
+    width: 100%;
+    height: 300px;
+    margin: 2rem 2rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #3e3d3d;
 }
 
 .windchill{
-    margin: 2rem 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    border-left: orangered 1px solid;
+}
+
+.firstContainer{
+    width: 100%;
+    padding: 8px 0;
+    margin: 2rem 0;
+    border-left: rgb(255, 55, 0, .5) 1px solid;
+    font-family: var(--mainFont);
 }
 
 .windchill *{
     margin: 0;
 }
 
-.weatherTemp, .weatherMain{
+.weatherTemp{
     display: flex;
     align-items: center;
 }
@@ -241,12 +308,60 @@ main{
 .weatherTemp, 
 .weatherMain,
 .windchill h2{
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
+.windchill h2, .windchill h1{
+    font-weight: 800;
+}
 
+.weatherMain p{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
 
+.moreInfo{
+    font-size: 13px;
+}
 
+#forecast-container{
+    grid-row: 3/4;
+    margin: 1.7rem 2rem;
+}
+
+.forecastContainer{
+    width: 50%;
+    box-shadow: 1px 1px 5px #999;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.forecastContainer *{
+    margin: 7px 0;
+    font-family: var(--mainFont);
+}
+
+.fcDiv {
+    display: flex;
+    align-items: center;;
+}
+
+.forecastContainer p{
+    font-weight: 600;
+}
+
+.fcDiv h1{
+    font-weight: 800;
+}
+
+.forecastSection *{
+    margin: 0;
+}
+
+.forecastSection{
+    border-left: rgb(255, 55, 0, .5) 1px solid;
+    padding: 0 1rem;
+}
 
 
 #backToTop {
@@ -271,6 +386,10 @@ main{
     transition: top 0.3s;
     color: #ffffff;
     border: none;
+}
+
+#backToTop button:hover{
+    background-color: #08466a;
 }
 
 .accordion::after {
@@ -337,7 +456,7 @@ footer{
     }
 
     .navigation li a{
-        margin: 1rem;
+        margin: 2rem;
         color: white;
     }
     
