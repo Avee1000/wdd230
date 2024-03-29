@@ -23,7 +23,7 @@ const div = document.querySelector('.windchill');
 const banner = document.getElementById("banner");
 
 
-const url = "https://api.openweathermap.org/data/2.5/forecast?lat=6.32691&lon=5.60750&units=imperial&APPID=61a0af6c0abff327e78c6ce5bfbb578c";
+const url = "https://api.openweathermap.org/data/2.5/forecast?lat=20.50790&lon=-86.94813&units=imperial&APPID=61a0af6c0abff327e78c6ce5bfbb578c";
 
 async function apiFetch() {
     try {

@@ -8,8 +8,12 @@
     --mainFont: 'Nunito Sans'
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body, html {
-    margin: 0;
+    margin: auto;
     padding: 0;
     height: auto;
 }
@@ -26,7 +30,6 @@ body, html {
     padding: 1rem;
     transition: all .5s;
     color: white;
-    height: 35px;
 }
 
 .banner-fixed {
@@ -111,7 +114,7 @@ body, html {
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 header {
-    box-sizing: border-box;
+    width: 100%;
     display: grid;
     place-items: center;
     background-color: #0e1b2d;
@@ -136,16 +139,13 @@ header {
     display: inline-block;
 }
 
-input{
+#site-search{
     width: 250px;
     height: 50px;
     transition: width 0.4s ease-in-out;
     font-size: 15px;
     border: 0;
     outline: 0;
-}
-
-#site-search{
     box-sizing: border-box;
     background-color: #ffffff;
     border-radius: 50px;
@@ -155,15 +155,15 @@ input{
     border: 1px solid #ccc;
 }
 
-input:hover{
+#site-search:hover{
     width: 300px;
 }
 
-input:focus{
+#site-search:focus{
     box-sizing: border-box;
     width: 420px;
     font-size: 20px;
-    /* transition: font-size 0.2s ease-in-out; */
+    transition: all 0.5s ease-in-out;
     /* border: 4px solid !important;
     border-color: #00b4d8 !important; */
 }
@@ -402,6 +402,32 @@ main{
 .accordion:hover{
     cursor: pointer;
 }
+
+/*-------------------------------------RESERVATIONS-------------------------------------------*/
+
+#backToTop-res {
+    position: absolute;
+    background-color: none;
+    height: 60px;
+    width: 100%;
+    text-align: right;
+}
+
+#backToTop-res button{
+    background-color: black;
+    border-radius: 50%;
+    bottom: 10px;
+}
+
+#backToTop-res .accordion::after {
+    content: "\25B4";/* Unicode character for "plus" sign (+) */
+    font-size: 40px;
+    color: #F1FAEE;
+    margin: 0;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------*/
 
 footer{
     place-items: center;
