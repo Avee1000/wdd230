@@ -26,15 +26,6 @@
 <body>
     <div id="content">
         <header> 
-            <div id="myNav" class="overlay">
-                <div class="overlay-content">
-                    <span class="closebtn">
-                        <i id="close" class="fa-solid fa-times fa-xs"></i>
-                    </span>
-                    <p id="message">MAKE A RENTAL RESERVATION</p>
-                </div>
-            </div>
-
             <a id="logo_link1" href="index.html">
                 <img class='logo1' src="images/servicehub-icon_white_smaller.png" alt="ServiceHub Logo" loading="lazy" width="50" height="50">
             </a>
@@ -58,115 +49,111 @@
         <main id="main">
 
             <div class="spacerCont">
-                <div id="black"></div>
-                <div class="hero">
-                    <picture>
-                        <source srcset="images/hero-medium.png" media="(max-width: 1000px)">
-                      <img src="images/hero.png" alt="Side Image" loading="lazy" width="1920" height="1080">
-                    </picture>
-                </div>
+                <div class="hero"></div>
                 <div class="spacer">
-                    <p><span>~Scoots~</span> is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the 
-                        western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and 
-                        cruise-based touring groups and partnerships.<br><br>
-
-                        The company has two physical rental locations on Cozumel. One is near the Playa del Carmen-Cozumel Ferry dock in 
-                        el Centro de Cozumel and the other is near the Terminal Puerta Maya further south along the coast which caters to the 
-                        cruise lines and patrons. The company promotes friendly and easy to rent services of motor scooters, jeeps, and 
-                        side-by-sides ATVs.<br><br>
-
-                        <span>~Scoots~</span> aims to promote rental services for those customers that like to do their homework before getting
+                    <h1>Explore Cozumel's <br>Coast with  <span class="scoots">~Scoots~</span></h1>
+                    <p>
+                        <span class="scoots">~Scoots~</span> aims to promote rental services for those customers that like to do their homework before getting
                          to the island and to provide information about the services, requirements, and rental process. The website should reflect the 
                          fun and carefree attitude of the island and the ability to escape the touristy western part of the island by exploring the vast 
-                         coasts and inlets on the southern and eastern shores.</p>
-                    </div>
+                         coasts and inlets on the southern and eastern shores.
+                    </p>
 
-                <section>
-                    <h1>Rental Services and Agreements</h1>
-                    <ul>
-                        <li class="fade-in">A $50 security deposit is required to confirm reservations</li>
-                        <li class="fade-in">A valid drivers license is required in hand at the time of rental.</li>
-                        <li class="fade-in">No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-                        <li class="fade-in">Fuel charge is not included.</li>
-                        <li class="fade-in">Unlimited mileage.</li>
-                        <li class="fade-in">Liability insurance is included.</li>
-                        <li class="fade-in">Damage insurance is available for purchase.</li>
-                        <li class="fade-in">Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                        <li class="fade-in">Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-                        <li class="fade-in">Rentals may be returned to either physical location.</li>
-                    </ul>
+                    <div class="heroBtn">
+                        <a href="#form">Make a Booking</a>
+                    </div>
+                </div>
+
+                <section class='benefits'>
+                    <div class="black"></div>
+                    <div class="red"></div>
+
+                    <div class="benefits-text">                   
+                         <h1>Rental Agreement <br>Information</h1>
+                        <ul>
+                            <li class="fade-in">A $50 security deposit is required to confirm reservations</li>
+                            <li class="fade-in">A valid drivers license is required in hand at the time of rental.</li>
+                            <li class="fade-in">No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                            <li class="fade-in">Fuel charge is not included.</li>
+                            <li class="fade-in">Unlimited mileage.</li>
+                            <li class="fade-in">Liability insurance is included.</li>
+                            <li class="fade-in">Damage insurance is available for purchase.</li>
+                            <li class="fade-in">Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                            <li class="fade-in">Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                            <li class="fade-in">Rentals may be returned to either physical location.</li>
+                        </ul>
+                    </div>
                 </section>
             </div>
 
-            <form method="get" action="thankyou.html" class="wf1" id="left-side">
-                <fieldset>
-                    <legend> Customer Information</legend>
-                    <label>First Name <span class="fa-asterisk"></span><input type="text" id="firstname" name="firstname" required></label>
+            <div id="form-side">
+                <form method="get" action="thankyou.html" class="wf1" id="form">
+                    <fieldset>
+                        <legend> Customer Information</legend>
+                        <label>First Name <span class="fa-asterisk"></span><input type="text" id="firstname" name="firstname" required></label>
 
-                    <label>Last Name<span class="fa-asterisk"></span><input type="text" id="lastname" name="lastname" required></label>
+                        <label>Last Name<span class="fa-asterisk"></span><input type="text" id="lastname" name="lastname" required></label>
 
-                    <!-- <label>Title or Position*<input type="text" pattern="^[A-Za-z\- ]{7,}" id="title" name="title" required></label> -->
+                        <!-- <label>Title or Position*<input type="text" pattern="^[A-Za-z\- ]{7,}" id="title" name="title" required></label> -->
 
-                    <!-- <label>Password*<input type="password" pattern="(?=.*\d.*\d)(?=.*[A-Za-z]).{8,}" id="pwd" name="pwd" 
-                        placeholder="Password must be 8 characters long and alpha-numberic" required></label> -->
-    
-                    <label>Email<span class="fa-asterisk"></span><input type="email" pattern="[a-zA-Z0-9_.\-]+@[a-Za-Z]+\.(?=.*com)" id="email" name="email" 
-                        placeholder="someone@example.com" title="Please enter a valid email address" required></label>
+                        <!-- <label>Password*<input type="password" pattern="(?=.*\d.*\d)(?=.*[A-Za-z]).{8,}" id="pwd" name="pwd" 
+                            placeholder="Password must be 8 characters long and alpha-numberic" required></label> -->
+        
+                        <label>Email<span class="fa-asterisk"></span><input type="email" pattern="[a-zA-Z0-9_.\-]+@[a-Za-Z]+\.(?=.*com)" id="email" name="email" 
+                            placeholder="someone@example.com" title="Please enter a valid email address" required></label>
 
-                    <label>Mobile Phone number<span class="fa-asterisk"></span><input type="tel"  id="phone" name="phone" required></label>
-    
-                </fieldset> 
-    
-                <!-------------------------------- RENTAL -------------------------------------->
+                        <label>Mobile Phone No.<span class="fa-asterisk"></span><input type="tel"  id="phone" name="phone" required></label>
+        
+                    </fieldset> 
+        
+                    <!-------------------------------- RENTAL -------------------------------------->
 
-                <fieldset>
-                    <legend>Rental Details</legend>
-                    <label>Date Needed <span class="fa-asterisk"></span><input type="date" id="date" name="completeDate" required></label>
-                    <label>Number <span class="fa-asterisk"></span><input type="number" id="number" name="number" required></label>
+                    <fieldset id="field">
+                        <legend>Rental Details</legend>
+                        <label>Date Needed <span class="fa-asterisk"></span><input type="date" id="date" name="completeDate" required></label>
+                        <label>Number <span class="fa-asterisk"></span><input type="number" id="number" name="number" required></label>
 
-                    <div>Period <span class="fa-asterisk"></span></div>
-                    <label><input type="radio" name="period" value="half" required>Half Day (3 hrs)</label>
-                    <label><input type="radio" name="period" value="full" required>Full Day</label>
+                        <div class="rentail">Period <span class="fa-asterisk"></span></div>
+                        <label><input class='rent' type="radio" name="period" value="half" required>Half Day (3 hrs)</label>
+                        <label><input class="rent" type="radio" name="period" value="full" required>Full Day</label>
 
-                    <div>Rental Type  <span class="fa-asterisk"></span></div>
-                        <ul>
-                            <li>Honda Motor <strong>Scooters</strong>
-                                <label><input type="checkbox" name="metropolitan" value="yes" required>Honda Metropolitan (49cc) - 1 person</label>
-                                <label><input type="checkbox" name="dio" value="yes" required>Honda Dio (110cc) - 2 person</label>
-                                <label><input type="checkbox" name="pcx150" value="yes" required>Honda PCX150 (149cc) - 2 person</label>
-                            </li>
+                        <div class="rentail">Rental Type  <span class="fa-asterisk"></span></div>
+                            <ul>
+                                <li>Honda Motor <strong>Scooters</strong>
+                                    <label><input type="checkbox" name="metropolitan" value="yes" required>Honda Metropolitan (49cc) - 1 person</label>
+                                    <label><input type="checkbox" name="dio" value="yes" required>Honda Dio (110cc) - 2 person</label>
+                                    <label><input type="checkbox" name="pcx150" value="yes" required>Honda PCX150 (149cc) - 2 person</label>
+                                </li>
 
-                            <li>Side-by-Side <strong>ATVs</strong>
-                                <label><input type="checkbox" name="pioneer" value="yes" required>Honda Pioneer 1000 - 4 person</label>
-                            </li>
+                                <li>Side-by-Side <strong>ATVs</strong>
+                                    <label><input type="checkbox" name="pioneer" value="yes" required>Honda Pioneer 1000 - 4 person</label>
+                                </li>
 
-                            <li><strong>Jeeps</strong>
-                                <label><input type="checkbox" name="wrangler-ac" value="yes" required>Jeep Wrangler - 4 door manuel with A/C - 5 person</label>
-                                <label><input type="checkbox" name="wrangler-manuel" value="yes" required>Jeep Wrangler - 2 door - open air - manuel - 4 person</label>
-                            </li>
-                        </ul>
-                </fieldset>
+                                <li><strong>Jeeps</strong>
+                                    <label><input type="checkbox" name="wrangler-ac" value="yes" required>Jeep Wrangler - 4 door manuel with A/C - 5 person</label>
+                                    <label><input type="checkbox" name="wrangler-manuel" value="yes" required>Jeep Wrangler - 2 door - open air - manuel - 4 person</label>
+                                </li>
+                            </ul>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Destination Details</legend>
-                    <label>Home State or Country <span class="fa-asterisk"></span><input type="text" id="state" name="state" required></label>
+                    <fieldset>
+                        <legend>Destination Details</legend>
+                        <label>Home State or Country <span class="fa-asterisk"></span><input type="text" id="state" name="state" required></label>
 
-                    <label>Cruise Line <span class="optional">(if applicable)</span><input type="text" id="cruise" name="cruise" ></label>
+                        <label>Cruise Line <span class="optional">(if applicable)</span><input type="text" id="cruise" name="cruise" ></label>
 
-                    <label>Special Accommodations/Comments<span class="optional">(Optional)</span>
-                        <textarea name="businessDesc" cols="30" rows="6" id="businessDesc" 
-                        placeholder="Enter a special accommodation or comment such as location of a drop-off request" spellcheck="true" ></textarea></label>
-                </fieldset>
-
-
-                <input type="hidden" name="milli" id="milli" >
-                     
-
-                <div class="button"><input type="submit" value="Make my reservation" id="submit"> </div>                    
-            </form>
+                        <label>Special Accommodations/Comments<span class="optional">(Optional)</span>
+                            <textarea id="text" name="businessDesc" cols="30" rows="6" id="businessDesc" 
+                            placeholder="Enter a special accommodation or comment such as location of a drop-off request" spellcheck="true" ></textarea></label>
+                    </fieldset>
 
 
+                    <input type="hidden" name="milli" id="milli" >
+                        
 
+                    <div class="button"><input type="submit" value="Make my reservation" id="submit"> </div>                    
+                </form>
+            </div>
 
         </main>
        

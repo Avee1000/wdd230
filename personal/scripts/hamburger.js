@@ -51,7 +51,7 @@ function fadeInElements() {
     const elements = document.querySelectorAll('.fade-in');
     elements.forEach(element => {
         if (isInViewport(element)) {
-            document.querySelector('.spacer h1').classList.add('visible');
+            document.querySelector('.benefits-text h1').classList.add('visible');
             element.classList.add('visible');
         } else {
             element.classList.remove('visible');

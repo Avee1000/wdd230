@@ -52,4 +52,50 @@
         width: 40%;
     }
 
+    /*-----------------------------------------RESERVATION-----------------------------------------------*/
+
+    .spacer {
+        margin: 10rem 0 0 15rem;
+    }
+
+    .spacer p{
+        padding-right: 10 1rem;
+    }
+
+    .black{
+        width: 20%;
+        background-color: #000000;
+        z-index: -1;
+    }
+
+    .red{
+        width: 20%;
+        background-color: #b1343e;
+        z-index: -1;
+    }
+
+    .benefits-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .benefits-text ul{
+        margin: 2rem 0;
+        left: 3rem;
+    }
+
+    .benefits-text li{
+        font-size: 1.125rem;
+    }
+
+    .fade-in{
+        font-size: 20px;
+    }
+
+    
+    textarea{
+        width: 350px;
+    }
 }

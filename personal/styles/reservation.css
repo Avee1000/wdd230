@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Salsa&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
     --text-color: "black";
     --required-color: rgb(166, 7, 7);
     --valid-color: rgb(4, 110, 4);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -16,102 +21,286 @@ body, html {
 }
 
 #main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-#black{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    margin-bottom: 2rem;
-}
-
-.hero{
-    margin-top: 10rem;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    width: 100%;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    display: flex;
+    flex-direction: column;             
 }
 
 .spacerCont{
-    width: auto;
-    grid-column: 1/3;
-    grid-row: 1/3;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-.fade-in {
-    color: white !important;
-    opacity: 0;
-    transition: all 1.5s ease-in-out;
-    z-index: 1;
-}
-
-.visible {
-    opacity: 1;
+.hero{
+    background-color: #A8DADC;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
 }
 
 .spacer {
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: left;
-    margin: 0 4rem;
-    padding-top: 200px;
+    margin: 7rem 0 0 7rem
 }
 
 .spacer p {
-    font-family: 'Salsa';
-    font-weight: 900;
+    margin: 2.5rem 0 0 0;
+    font-family: 'Roboto';
+    font-weight: 400;
     font-size: 20px;
     line-height:1.5;
     line-break: auto;
-    color: white;
+    animation: fade-left 3s  forwards linear;
 }
 
-.spacer span{
-    font-size: 30px;
+@keyframes fade-left{
+    from{
+        opacity: 0; 
+        transform: translateX(-100%); }
+
+    to{
+        opacity: 1; 
+        transform: translateX(0);
+    }
 }
 
 .spacer h1{
-    text-align: center !important;
-    color: #E63946;
+    font-family: "Roboto";
+    font-weight: 1900;
+    font-size: 60px;
+    text-align: left;;
     position: relative;
-    transition: all 2s;
     transform: translateX(-100%);
-    animation: slideRight 2s forwards;
+    animation: slideRight 3s forwards linear;
 }
-
 
 @keyframes slideRight {
     from {
-      transform: translateX(-100%);
+        transform: translateX(100%);
     }
+
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
-
-
-
-/* #main h1{
-    text-align: left;
-    margin: 3px;
-} */
-.wf1{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    font-family: var(--paragraph-font);
-    font-size: 1rem;
-    font-weight: 50;
-    display: block;
-    text-align: left;
-    width: 80%;
 }
 
+.scoots{
+    padding: 6px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
 
+.heroBtn a{
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #e1eced;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    animation: scale-in 3s linear;
+}
+
+.heroBtn a:hover{
+    background-color: #417273;
+    color: white;
+}
+
+@keyframes scale-in {
+    from{
+        opacity: 0; 
+        transform: scale(0.8); 
+    }
+
+    50%{
+        opacity: 1; 
+        transform: scale(1.1); 
+    }
+    
+    to{
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}
+
+.benefits{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.black{
+    width: 30%;
+    background-color: #000000;
+}
+
+.red{
+    width: 30%;
+    background-color: #b1343e;
+    z-index: -1;
+}
+
+.benefits-text{
+    background-color: #F1FAEE;
+    flex: 2;
+    width: 100%;
+}
+
+.benefits-text h1{
+    font-family: "Roboto", serif, Arial;
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    animation: fade-in 1s;
+    animation-timeline: view(80px 0px );
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.fade-in {
+    color: black !important;
+    opacity: 0;
+}
+
+.visible{
+    opacity: 1;
+    transition: 1s;
+    animation: slide-in;
+}
+
+.benefits-text li{
+    font-size: clamp(10px, 30px, 60px);
+    font-family: "Roboto", serif, Arial;
+    line-height: 2.3;
+}
+
+.benefits ul{
+    position: relative;
+    text-align: left;
+    margin: 0;
+}
+
+/*----------------------------------------------------------*/
+
+#form-side{
+    /* background-color: #5886a2; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wf1{
+    grid-column: 1/2;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    margin: 1rem;
+    width: 100%;
+    font-family: "Belanosima", serif, Arial;
+}
+
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid #878282;
+    border-radius: 6px;
+    padding: 1rem 2%;
+}
+
+.wf1 fieldset:nth-of-type(3){
+    padding-bottom: 2rem;
+}
+
+.wf1 legend{
+    font-size: 2rem;
+    color: var(--required-color);
+    padding:0 .5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="number"],
+.wf1 input[type="date"],
+.wf1 select
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 350px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]{
+    margin: 6px 10px;
+}
+
+textarea{
+    display: block;
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #000000;
+    max-height: 150px;
+    width: 300px;
+    transition: width 1s;
+}
+
+.rentail{
+    color: #1D3557;
+    margin: 1rem 1rem;
+}
+
+.fa-asterisk{
+    color: rgb(174, 11, 11);
+}
+
+.wf1 input[type="submit"]{
+    background-image: linear-gradient(var(--required-color), #6f200e);
+    border: none;
+    border-radius: 60px;
+    padding: .75rem;
+    color: #eee;
+    width: 60%;
+    max-width: 350px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.button{
+    display: block;
+    margin: -1rem 0 2rem 2rem;
+    padding: 1rem;
+    font-size: 1.3em;
+}

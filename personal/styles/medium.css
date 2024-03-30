@@ -45,11 +45,55 @@
         color: white !important;
     }
 
+    /*-----------------------------------------RESERVATION-----------------------------------------------*/
+
+    .spacer {
+        margin: 10rem 0 0 5rem;
+    }
+
+    .spacer p{
+        font-size: 15px;
+    }
+
+    .spacer h1{
+        font-family: "Roboto";
+        font-weight: 1900;
+        font-size: 40px;
+        line-height: 1.2;
+        text-align: left;;
+        position: relative;
+        transform: translateX(-100%);
+        animation: slideRight 2s forwards;
+    }
+
+    .black{
+        display: none;
+    }
+
+    .red{
+        width: 20%;
+        background-color: #b1343e;
+        z-index: -1;
+    }
+
+    .benefits-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .benefits-text li{
+        font-size: 1.125rem;
+    }
+
+    .benefits-text ul{
+        margin: 2rem 0;
+    }
+
     /*------------------------FORMS-------------------------*/
 
-      .wf1{
-        width: 90%;
-    }
+  
 
     textarea{
         width: 350px;
@@ -81,6 +125,8 @@
         margin: auto;
         word-break: keep-all;
     }
+
+ 
 
 
 
