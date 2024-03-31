@@ -1,17 +1,25 @@
 /* //////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 1000px){
 
+    .closebtn {
+        position: relative;
+        display: block;
+        text-align: center;
+        left: 9%;
+        background-color: transparent;
+        color: white;
+    }
+    
+    .closebtn i{
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
     #menu{
         display: none;
     }
 
-    /* nav{
-        display: block;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    } */
-    
     .navigation{
         display: flex;
         justify-content: center;
@@ -61,14 +69,14 @@
     #hero-box{
         grid-column: 1/3;
         grid-row: 1/5;
-        z-index: 2;
+        /* z-index: 2; */
     }
 
     .hero-image-container{
         grid-column: 1/3;
         grid-row: 1/5;
         background-image: linear-gradient(#A8DADC, rgb(255, 255, 255, .6));
-        z-index: 2;
+        /* z-index: 2; */
     }
 
     #hero-box img {
@@ -79,29 +87,26 @@
     }
 
     .hero-caption{
+        position: relative;
+        top: 50px;
         text-align: center;
         grid-column: 1/3;
         grid-row: 2/5;
-        z-index: 5555555;
+        /* z-index: 5555555; */
     }
 
     .hero-caption h1{
         font-family: "Roboto";
         font-weight: 1000;
         font-size: 60px;
-        /* text-align: left;
-        position: relative; */
-        /* transform: translateX(-100%); */
-        /* animation: slideRight 3s forwards linear; */
+        opacity: 0;
+        animation: slideRight 3s forwards linear;
     }
     
     @keyframes slideRight {
-        from {
-            transform: translateX(100%);
-        }
-    
+   
         to {
-            transform: translateX(0);
+            opacity:1;
         }
     }
     
