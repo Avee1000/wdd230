@@ -123,7 +123,7 @@ body, html {
 
     50%{
         opacity: 1; 
-        transform: scale(1.1); 
+        transform: scale(1.15); 
     }
     
     to{
@@ -201,43 +201,52 @@ body, html {
     margin: 0;
 }
 
-/*----------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 
 #form-side{
-    /* background-color: #5886a2; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9e4ef86;
 }
 
-.main-block {
-    grid-column: 2/3;
+#form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.wf1{
+    flex: 0 0 auto;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    font-family: "roboto";
+}
+
+.wf1 fieldset, #rental{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #1c87c9;
+    width: 30%;
+    height: 100%;
+    padding: 2rem 0 2rem 0;
+    background-color: white;
+    border: none;
+    border-radius: 60px;
 }
 
-.wf1{
-    grid-column: 1/2;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left;
-    margin: 1rem;
-    font-family: "Belanosima", serif, Arial;
-}
-
-.wf1 fieldset{
-    margin: 2rem 0;
-    border: 1px solid #878282;
-    border-radius: 6px;
-    padding: 1rem 2%;
-}
-
-.wf1 fieldset:nth-of-type(3){
+/* .wf1 fieldset:nth-of-type(3){
     padding-bottom: 2rem;
-}
+} */
 
 .wf1 legend{
     font-size: 2rem;
@@ -246,8 +255,8 @@ body, html {
 }
 
 .wf1 label{
-    display: block;
-    padding: 1rem 2rem;
+    width: 100%;
+    padding: 1rem 3rem;
     font-size: 1rem;
 }
 
@@ -258,14 +267,13 @@ body, html {
 .wf1 input[type="date"],
 .wf1 select
 {
+    width: 100%;
     background-color: #eee;
     display: block;
     border: 1px solid #999;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: .75rem;
     color: #555;
-    width: 100%;
-    max-width: 350px;
     appearance: none;
 }
 
@@ -293,6 +301,29 @@ textarea{
 
 .fa-asterisk{
     color: rgb(174, 11, 11);
+}
+
+.next{
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    text-align: right;
+    margin: 1rem 0 1rem 0;
+}
+
+.next a{
+    background-color: #417273;
+    border-radius: 30px;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.next a:hover{
+    background-color: #264d4e;
 }
 
 .wf1 input[type="submit"]{
