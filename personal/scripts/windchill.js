@@ -44,12 +44,12 @@ apiFetch();
 
 function displayWeather(data) {
 
-    const prompt = document.getElementById('prompt');
-    prompt.innerHTML = `Maximum Temperature:  ${data.list[0].main.temp_max.toFixed(0)}&deg;F`;
+    // const prompt = document.getElementById('prompt');
+    // prompt.innerHTML = `Maximum Temperature:  ${data.list[0].main.temp_max.toFixed(0)}&deg;F`;
 
-    document.querySelector('.close').addEventListener('click', function () {
-        banner.style.display = "none";
-    });
+    // document.querySelector('.close').addEventListener('click', function () {
+    //     banner.style.display = "none";
+    // });
 
 
     const windchillContainer = document.createElement('div');
@@ -133,13 +133,13 @@ function displayWeather(data) {
 
 ////////////////////////////////////////////////////////////////////////
 
-window.addEventListener('scroll', function () {
+// window.addEventListener('scroll', function () {
 
-    const scrollPosition = window.scrollY;
+//     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 0) {
-        banner.classList.add('banner-fixed');
-    } else {
-        banner.classList.remove('banner-fixed');
-    }
-});
+//     if (scrollPosition > 0) {
+//         banner.classList.add('banner-fixed');
+//     } else {
+//         banner.classList.remove('banner-fixed');
+//     }
+// });

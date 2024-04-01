@@ -1,5 +1,20 @@
 @media screen and (min-width: 640px) and (max-width: 1000px) {
 
+    .closebtn {
+        position: relative;
+        display: block;
+        text-align: center;
+        left: 15%;
+        background-color: transparent;
+        color: white;
+    }
+    
+    .closebtn i{
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
     header h1{
         font-size: 2rem;
         padding: .5rem;
@@ -75,11 +90,10 @@
         font-weight: 1000;
         font-size: 40px;
         opacity: 0;
-        animation: slideRight 3s forwards linear;
+        animation: fade-in 3s forwards linear;
     }
     
-    @keyframes slideRight {
-   
+    @keyframes fade-in {
         to {
             opacity:1;
         }
@@ -114,7 +128,7 @@
         text-align: left;;
         position: relative;
         transform: translateX(-100%);
-        animation: slideRight 2s forwards;
+        animation: slideRight 2s forwards linear;
     }
 
     .black{

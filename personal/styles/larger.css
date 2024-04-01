@@ -100,10 +100,10 @@
         font-weight: 1000;
         font-size: 60px;
         opacity: 0;
-        animation: slideRight 3s forwards linear;
+        animation: fade-in 3s forwards linear;
     }
     
-    @keyframes slideRight {
+    @keyframes fade-in {
    
         to {
             opacity:1;
