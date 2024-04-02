@@ -107,6 +107,7 @@ body, html {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    transition: 0.5s ease-in-out;
 }
 
 .heroBtn a:hover{

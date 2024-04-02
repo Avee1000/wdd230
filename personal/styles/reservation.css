@@ -107,8 +107,8 @@ body, html {
     color: black;
     font-size: 20px;
     font-weight: 500;
-    animation: scale-in 3s linear;
-    transition: 1s;
+    animation: scale-in 3s infinite linear ;
+    transition: 1s ease-in-out;
 }
 
 .heroBtn a:hover{
@@ -117,20 +117,14 @@ body, html {
 }
 
 @keyframes scale-in {
-    from{
-        opacity: 0; 
-        transform: scale(0.8); 
+    0%{
+        scale: 1;
     }
 
     50%{
-        opacity: 1; 
-        transform: scale(1.15); 
+        scale: 1.08;
     }
-    
-    to{
-        opacity: 1; 
-        transform: scale(1); 
-    }
+
 }
 
 .benefits{
