@@ -145,8 +145,39 @@
         font-size: 30px;
         font-size: 450;
     }
-    /*-----------------------------------------RESERVATION-----------------------------------------------*/
 
+    #third-section article h1{
+        padding: 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 100px;
+    }
+
+    #third-section article h3{
+        width: 80%;
+        margin: auto;
+        padding: 15px;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    #third-section article{
+        margin-bottom: 2rem;
+    }
+
+
+    .text h1{
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+    .text h3{
+        font-size: 30px;
+        font-weight: 200;
+    }
+    /*-----------------------------------------RESERVATION-----------------------------------------------*/
     .spacer {
         margin: 10rem 0 0 15rem;
     }

@@ -64,3 +64,36 @@ fadeInElements();
 
 // Add scroll event listener to check for elements entering viewport
 window.addEventListener('scroll', fadeInElements);
+
+/////////////////////////////////////////////////////////////////////
+const infoButtons = document.querySelectorAll('.info-button');
+const displayClosebutton = document.querySelectorAll('.close-info-button');
+
+infoButtons.forEach((button) => { 
+
+    button.addEventListener("click", () => {
+        const parentElement = button.parentElement;
+        const imgTextOverlay = parentElement.nextElementSibling;
+        const closeButton = button.nextElementSibling;
+
+        imgTextOverlay.style.height = "100%";
+        imgTextOverlay.style.bottom = "0";
+        button.classList.add('remove-info');
+        closeButton.classList.add('show-remove-button');
+    });
+});
+
+displayClosebutton.forEach((closeButton) => {
+
+    closeButton.addEventListener("click", () => {
+        const closeButtonParentElement = closeButton.parentElement;
+        const infoButton = closeButton.previousElementSibling;
+        const imgTextOverlay = closeButtonParentElement.nextElementSibling;
+
+        imgTextOverlay.style.height = "0";
+        imgTextOverlay.style.bottom = "100%";
+        closeButton.classList.remove('show-remove-button');
+        infoButton.classList.remove('remove-info');
+    });
+});
+
