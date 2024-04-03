@@ -71,29 +71,20 @@ const displayClosebutton = document.querySelectorAll('.close-info-button');
 
 infoButtons.forEach((button) => { 
 
-    button.addEventListener("click", () => {
+    button.addEventListener("mouseover", () => {
         const parentElement = button.parentElement;
         const imgTextOverlay = parentElement.nextElementSibling;
-        const closeButton = button.nextElementSibling;
 
         imgTextOverlay.style.height = "100%";
         imgTextOverlay.style.bottom = "0";
-        button.classList.add('remove-info');
-        closeButton.classList.add('show-remove-button');
     });
-});
 
-displayClosebutton.forEach((closeButton) => {
+    button.addEventListener("mouseout", () => { 
+        const parentElement = button.parentElement;
+        const imgTextOverlay = parentElement.nextElementSibling;
 
-    closeButton.addEventListener("click", () => {
-        const closeButtonParentElement = closeButton.parentElement;
-        const infoButton = closeButton.previousElementSibling;
-        const imgTextOverlay = closeButtonParentElement.nextElementSibling;
-
-        imgTextOverlay.style.height = "0";
-        imgTextOverlay.style.bottom = "100%";
-        closeButton.classList.remove('show-remove-button');
-        infoButton.classList.remove('remove-info');
+        imgTextOverlay.style.height = "";
+        imgTextOverlay.style.bottom = "";
     });
 });
 
