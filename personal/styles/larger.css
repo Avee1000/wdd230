@@ -89,18 +89,7 @@
     }
 
     .hero-caption h1{
-        font-family: "Roboto";
-        font-weight: 1000;
         font-size: 60px;
-        opacity: 0;
-        animation: fade-in 3s forwards linear;
-    }
-    
-    @keyframes fade-in {
-   
-        to {
-            opacity:1;
-        }
     }
     
     .scoots{

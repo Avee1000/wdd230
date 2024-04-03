@@ -205,76 +205,107 @@ body, html {
     background-color: #d9e4ef86;
 }
 
-#form{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: nowrap;
+#regForm{
+    box-sizing: content-box;
+    display: inline;
+    width: 30%;
+    margin: 15rem 0;
+    background-color: white;
     overflow: hidden;
+    border-radius: 60px;
+
 }
 
-.wf1{
-    flex: 0 0 auto;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10rem auto;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left;
+.tab {
+    display: none;
     font-family: "roboto";
+    position: relative;
 }
 
-.wf1 fieldset, #rental{
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 3rem 0 2rem 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.7;
+}
+  
+
+.tab fieldset{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     padding: 2rem 0 2rem 0;
-    background-color: white;
     border: none;
-    border-radius: 60px;
+}
+
+.tab fieldset h1{
+    margin: 4rem 0;
 }
 
 /* .wf1 fieldset:nth-of-type(3){
     padding-bottom: 2rem;
 } */
 
-.wf1 legend{
-    font-size: 2rem;
-    color: var(--required-color);
-    padding:0 .5rem;
-}
-
-.wf1 label{
+.tab label{
     width: 100%;
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
     font-size: 1rem;
+    font-weight: 500;
 }
 
-.wf1 input[type="text"],
-.wf1 input[type="tel"],
-.wf1 input[type="email"],
-.wf1 input[type="number"],
-.wf1 input[type="date"],
-.wf1 select
-{
-    width: 100%;
+.tab input[type="text"],
+.tab input[type="tel"],
+.tab input[type="email"],
+.tab input[type="number"]{
     background-color: #eee;
     display: block;
     border: 1px solid #999;
-    border-radius: 10px;
-    padding: .75rem;
+    border-radius: 15px;
+    padding: 1rem;
     color: #555;
+    width: 100%;
     appearance: none;
 }
 
-.wf1 input[type="radio"],
-.wf1 input[type="checkbox"]{
+.tab input[type="radio"],
+.tab input[type="checkbox"]{
     margin: 6px 10px;
+}
+
+.tab ul, .tab ul label{
+    width: 100%;
+    display: block;
+}
+
+.tab ul{
+    padding: 0 4rem;
+}
+
+.tab ul label{
+    padding: 15px;
+}
+
+#birthdate-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#date, #day{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 1rem;
+    color: #555;
+    width: 40%;
+    margin: 0 2rem 0 0;
 }
 
 textarea{
@@ -285,57 +316,86 @@ textarea{
     padding: .75rem;
     color: #000000;
     max-height: 150px;
+    max-width: 400px;
     width: 300px;
-    transition: width 1s;
 }
 
 .rentail{
     color: #1D3557;
-    margin: 1rem 1rem;
+    width: 100%;
+    padding: 0 0 0 4rem;
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .fa-asterisk{
     color: rgb(174, 11, 11);
 }
 
+
 .next-button{
     width: 100%;
     padding: 1rem 3rem;
     font-size: 1rem;
-    text-align: right;
-    margin: 1rem 0 1rem 0;
 }
 
-.next-button a{
+#nextBtn{
     background-color: #417273;
     border-radius: 30px;
+    margin-right: .5rem;
     padding: .7rem 1.5rem;
     cursor: pointer;
     font-family: "Roboto";
     text-decoration: none;
     color: white;
     font-size: 18px;
+    float: right;
 }
 
-.next-button a:hover{
+#prevBtn{
+    background-color: #417273;
+    border-radius: 30px;
+    margin-left: .5rem;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    float: left;
+}
+
+#nextBtn:hover, #prevBtn:hover{
     background-color: #264d4e;
 }
 
-.wf1 input[type="submit"]{
+.tab input[type="submit"]{
     background-image: linear-gradient(var(--required-color), #6f200e);
     border: none;
     border-radius: 60px;
-    padding: .75rem;
+    padding: .7rem 1.5rem;
     color: #eee;
-    width: 60%;
+    /* width: 50%; */
     max-width: 350px;
     appearance: none;
     cursor: pointer;
+    float: right;
+    font-size: 18px;
+    margin: 0 1rem;
 }
 
-.button{
-    display: block;
-    margin: -1rem 0 2rem 2rem;
-    padding: 1rem;
-    font-size: 1.3em;
+.last-next-button{
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+}
+
+.last-next-button #prevBtn{
+    margin: 0 1rem;
+}
+
+.active-step{
+    transition: all .6s ease-in-out;
+    background-color: rgb(0, 0, 0);
 }

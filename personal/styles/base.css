@@ -73,15 +73,15 @@ body, html {
 
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
+    height: 0;
+    width: 100%;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     background-color: rgb(0,0,0, 0.98); 
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.8s ease-in-out;
 }
 
 .overlay-content {
@@ -196,6 +196,26 @@ nav{
 .navigation li i{
     font-size: 23px;
 }
+
+.hero-caption h1{
+    font-family: "Roboto";
+    font-weight: 1000;
+    font-size: 60px;
+    opacity: 0;
+}
+
+.hero-caption-h1-fade{
+    animation: fade-in 3s forwards linear;
+}
+
+
+@keyframes fade-in {
+
+    to {
+        opacity:1;
+    }
+}
+
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
