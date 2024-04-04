@@ -31,6 +31,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             displayWeather(data);
+            displayForecast(data.list);
 
         } else {
             throw Error(await response.text());
@@ -95,40 +96,6 @@ function displayWeather(data) {
 
     //FORECAST FOR 1 DAYS
 
-
-    const forecastContainer = document.createElement('div');
-    forecastContainer.setAttribute('class', 'forecastContainer');
-
-    const heading = document.createElement('h1');
-    heading.innerHTML = `1-day forecast: <br>${data.list[7].dt_txt.slice(0, 10)} @ ${data.list[7].dt_txt.slice(11, 19)}`;
-
-    // const section = document.createElement('section');
-
-    const section = document.createElement('section');
-    section.setAttribute('class', 'forecastSection');
-
-    const fcDiv = document.createElement('div');
-    fcDiv.setAttribute('class', 'fcDiv');
-
-    const forecastIcon = document.createElement('img');
-    const icon = `https://openweathermap.org/img/w/${data.list[7].weather[0].icon}.png`
-    forecastIcon.setAttribute('src', icon);
-    forecastIcon.setAttribute('alt', "forecast-image");
-    forecastIcon.setAttribute('width', '50px');
-    forecastIcon.setAttribute('height', '50px');
-    forecastIcon.setAttribute('loading', 'lazy');
-
-    const dayTemp = document.createElement('h1');
-    dayTemp.innerHTML = `${data.list[7].main.temp.toFixed(0)}&deg;F`;
-
-    const upper = data.list[7].weather[0].description;
-    const dayDesc = document.createElement('p');
-    dayDesc.innerHTML = `${data.list[7].weather[0].main} (${upper.charAt(0).toUpperCase() + upper.slice(1)})`;
-
-    fcDiv.append(forecastIcon, dayTemp);
-    section.append(fcDiv, dayDesc);
-    forecastContainer.append(heading, section);
-    document.querySelector('#forecast-container').appendChild(forecastContainer);
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -143,3 +110,66 @@ function displayWeather(data) {
 //         banner.classList.remove('banner-fixed');
 //     }
 // });
+
+
+function displayForecast(data) {
+
+    const allDates = [];
+
+    var today = new Date();
+
+    // Copy today's date and add one day to it
+    var tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+    // Get the year, month, and day of the month for tomorrow's date
+    var year = tomorrow.getFullYear();
+    var month = tomorrow.getMonth() + 1; // Month is zero-indexed, so we add 1
+    var day = tomorrow.getDate();
+
+    // Format the date as yyyy-mm-dd
+    var tomorrowFormatted = year + '-' + (month < 10 ? '0' : '') + month + '-' + (day < 10 ? '0' : '') + day;
+
+    var formattedTime = "15:00:00";
+
+    for (let i = 0; i < data.length; i++) {
+        const lists = data[i];
+        allDates.push(lists.dt_txt);
+    }
+
+    const indexOfForecast = allDates.indexOf(tomorrowFormatted + " " + formattedTime);
+    const forecastContainer = document.createElement('div');
+    forecastContainer.setAttribute('class', 'forecastContainer');
+
+
+    const heading = document.createElement('h1');
+    heading.innerHTML = `1-day forecast: <br>${data[indexOfForecast].dt_txt.slice(0, 10)} @ ${data[indexOfForecast].dt_txt.slice(11, 19)}`;
+
+    // const section = document.createElement('section');
+
+    const section = document.createElement('section');
+    section.setAttribute('class', 'forecastSection');
+
+    const fcDiv = document.createElement('div');
+    fcDiv.setAttribute('class', 'fcDiv');
+
+    const forecastIcon = document.createElement('img');
+    const icon = `https://openweathermap.org/img/w/${data[indexOfForecast].weather[0].icon}.png`
+    forecastIcon.setAttribute('src', icon);
+    forecastIcon.setAttribute('alt', "forecast-image");
+    forecastIcon.setAttribute('width', '50px');
+    forecastIcon.setAttribute('height', '50px');
+    forecastIcon.setAttribute('loading', 'lazy');
+
+    const dayTemp = document.createElement('h1');
+    dayTemp.innerHTML = `${data[indexOfForecast].main.temp.toFixed(0)}&deg;F`;
+
+    const upper = data[indexOfForecast].weather[0].description;
+    const dayDesc = document.createElement('p');
+    dayDesc.innerHTML = `${data[indexOfForecast].weather[0].main} (${upper.charAt(0).toUpperCase() + upper.slice(1)})`;
+
+    fcDiv.append(forecastIcon, dayTemp);
+    section.append(fcDiv, dayDesc);
+    forecastContainer.append(heading, section);
+    document.querySelector('#forecast-container').appendChild(forecastContainer);
+}

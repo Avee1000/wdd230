@@ -19,16 +19,11 @@ if (window.location.pathname === "/personal/index.html") {
         document.querySelector('.hero-caption h1').classList.add('hero-caption-h1-fade');
     });
 
-
-
-    
-
     document.querySelector(".delete").addEventListener("click", () => {
         nav.style.height = "";
     });
 
     const infoButtons = document.querySelectorAll('.info-button');
-    const displayClosebutton = document.querySelectorAll('.close-info-button');
 
     infoButtons.forEach((button) => { 
 

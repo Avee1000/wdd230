@@ -208,7 +208,6 @@ nav{
     animation: fade-in 3s forwards linear;
 }
 
-
 @keyframes fade-in {
 
     to {
@@ -216,7 +215,12 @@ nav{
     }
 }
 
-
+.scoots{
+    padding: 6px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -343,7 +347,6 @@ main{
     border-left: rgb(255, 55, 0, .5) 1px solid;
     padding: 0 1rem;
 }
-
 
 #backToTop {
     display: grid;
@@ -622,6 +625,87 @@ main{
 
 
 /*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+#contact-main-hero-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#contact-hero-box{
+    grid-column: 1/3;
+    grid-row: 1/5;
+    /* z-index: 2; */
+}
+
+.contact-hero-image-container{
+    grid-column: 1/3;
+    grid-row: 1/5;
+    background-image: linear-gradient(#000000, rgba(0, 0, 0, 0.767));
+    /* z-index: 2; */
+}
+
+#contact-hero-box img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contact-hero-caption{
+    position: relative;
+    top: 40%;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    color: white;
+    font-family: "Roboto";
+}
+
+.contact-hero-caption h1{
+    opacity: 0;
+    font-size: 120px;
+    margin: 0;
+    animation: fade-in 6s forwards linear;
+}
+
+.contact-hero-caption p{
+    opacity: 0;
+    margin: 0;
+    font-size: 50px;
+    animation: fade-in 9s forwards linear;
+}
+
+.contact-scoots {
+    display: inline-block;
+    padding: 10px;
+    background-color: #A8DADC;
+    color: black;
+    border-radius: 10px;
+    font-weight: 800;
+    animation: drop 5s  4s ease-in-out infinite;
+    transform-origin: top left;
+}
+
+@keyframes drop {
+    0% {
+        transform: rotate(0deg); 
+    }
+    25%{
+        transform: rotate(90deg)
+    }
+    50% {
+        transform: rotate(20deg); 
+    }
+    75% {
+        transform: rotate(90deg); 
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+
+}
 
 #backToTop-res {
     position: absolute;
