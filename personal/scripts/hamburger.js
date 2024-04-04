@@ -1,6 +1,4 @@
-if (window.location.pathname === "/personal/index.html") {
-
-    document.body.style.overflow = "hidden";
+     document.body.style.overflow = "hidden";
     document.getElementById("myNav").style.height = "100%";
     
     const mainNav = document.querySelector('.navigation');
@@ -44,7 +42,6 @@ if (window.location.pathname === "/personal/index.html") {
         });
     });
 
-}
 
 
 // const hidden = document.getElementById("hidden-links");
@@ -60,43 +57,9 @@ if (window.location.pathname === "/personal/index.html") {
 //     hidden.style.display = "none";
 // });
 
-// Function to check if an element is in the viewport
-if (window.location.pathname === "/personal/reservations.html") {
-    function isInViewport(element) {
-        const bounding = element.getBoundingClientRect();
-        return (
-            bounding.top >= 0 &&
-            bounding.left >= 0 &&
-            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
+// JavaScript to scroll to the top of the page when the "Back to top" link is clicked:
+const scrollToTop = document.querySelector(".accordion");
 
-    // Function to handle fade-in effect for elements in viewport
-    function fadeInElements() {
-        const elements = document.querySelectorAll('.fade-in');
-        elements.forEach(element => {
-            if (isInViewport(element)) {
-                document.querySelector('.benefits-text h1').classList.add('visible');
-                element.classList.add('visible');
-            } else {
-                element.classList.remove('visible');
-            }
-        });
-    }
-
-    // Initial check for elements in viewport on page load
-    fadeInElements();
-
-    // Add scroll event listener to check for elements entering viewport
-    window.addEventListener('scroll', fadeInElements);
-}
-
-/////////////////////////////////////////////////////////////////////
-
-    // JavaScript to scroll to the top of the page when the "Back to top" link is clicked:
-    const scrollToTop = document.querySelector(".accordion");
-
-    scrollToTop.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+scrollToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
