@@ -18,6 +18,7 @@ body, html {
     margin: auto;
     padding: 0;
     height: auto;
+    scroll-behavior: smooth;
 }
 
 #content {
@@ -309,10 +310,6 @@ main{
     font-size: 13px;
 }
 
-#forecast-container{
-    grid-row: 3/4;
-    margin: 1.7rem 2rem ;
-}
 
 .forecastContainer{
     width: 50%;
@@ -472,7 +469,7 @@ main{
     transition: background-color 0.6s ease;
 }
   
-  .active-dot, .dot:hover {
+.active-dot, .dot:hover {
     background-color: #A8DADC;
 }
   
@@ -707,6 +704,395 @@ main{
 
 }
 
+/*-------------------------------------------------------------------------------------------------------*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Salsa&family=Workbench&display=swap'); */
+:root{
+    --text-color: "black";
+    --required-color: rgb(166, 7, 7);
+    --valid-color: rgb(4, 110, 4);
+}
+
+#main{
+    display: flex;
+    flex-direction: column;             
+}
+
+.spacerCont{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.hero{
+    background-color: #A8DADC;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+}
+
+.spacer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+    margin: 7rem 0 0 7rem
+}
+
+.spacer p {
+    margin: 2.5rem 0 0 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height:1.5;
+    line-break: auto;
+    animation: fade-left 3s  forwards linear;
+}
+
+@keyframes fade-left{
+    from{
+        opacity: 0; 
+        transform: translateX(-100%); }
+
+    to{
+        opacity: 1; 
+        transform: translateX(0);
+    }
+}
+
+.spacer h1{
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 80px;
+    text-align: left;;
+    position: relative;
+    transform: translateX(-100%);
+    animation: slideRight 3s forwards linear;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.scoots{
+    padding: 6px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.heroBtn a{
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #e1eced;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    animation: scale-in 3s infinite linear ;
+    transition: 1s ease-in-out;
+}
+
+.heroBtn a:hover{
+    background-color: #417273;
+    color: white;
+}
+
+@keyframes scale-in {
+    0%{
+        scale: 1;
+    }
+
+    50%{
+        scale: 1.08;
+    }
+
+}
+
+.benefits{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.black{
+    width: 30%;
+    background-color: #000000;
+}
+
+.red{
+    width: 30%;
+    background-color: #b1343e;
+    z-index: -1;
+}
+
+.benefits-text{
+    background-color: #F1FAEE;
+    flex: 2;
+    width: 100%;
+}
+
+.benefits-text h1{
+    font-family: "Roboto", serif, Arial;
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    animation: fade-in 1s;
+    animation-timeline: view(80px 0px );
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.fade-in {
+    color: black !important;
+    opacity: 0;
+}
+
+.visible{
+    opacity: 1;
+    transition: 1s;
+    animation: slide-in;
+}
+
+.benefits-text li{
+    font-size: clamp(10px, 30px, 60px);
+    font-family: "Roboto", serif, Arial;
+    line-height: 2.3;
+}
+
+.benefits ul{
+    position: relative;
+    text-align: left;
+    margin: 0;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+#form-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#regForm{
+    display: inline;
+    width: 30%;
+    margin: 15rem 0;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 60px;
+
+}
+
+.tab {
+    display: none;
+    font-family: "roboto";
+    position: relative;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 3rem 0 2rem 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.7;
+}
+  
+
+.tab fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 2rem 0 2rem 0;
+    border: none;
+}
+
+.tab fieldset h1{
+    margin: 4rem 0;
+}
+
+/* .wf1 fieldset:nth-of-type(3){
+    padding-bottom: 2rem;
+} */
+
+.tab label{
+    width: 100%;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tab input[type="text"],
+.tab input[type="tel"],
+.tab input[type="email"],
+.tab input[type="number"]{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 1rem;
+    color: #555;
+    width: 100%;
+    appearance: none;
+}
+
+.tab input[type="radio"],
+.tab input[type="checkbox"]{
+    margin: 6px 10px;
+}
+
+.tab ul, .tab ul label{
+    width: 100%;
+    display: block;
+}
+
+.tab ul{
+    padding: 0 4rem;
+}
+
+.tab ul label{
+    padding: 15px;
+}
+
+#birthdate-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#date, #day{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 1rem;
+    color: #555;
+    width: 40%;
+    margin: 0 2rem 0 0;
+}
+
+textarea{
+    display: block;
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #000000;
+    max-height: 150px;
+    max-width: 400px;
+    width: 300px;
+}
+
+.rentail{
+    color: #1D3557;
+    width: 100%;
+    padding: 0 0 0 4rem;
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fa-asterisk{
+    color: rgb(174, 11, 11);
+}
+
+
+.next-button{
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+}
+
+#nextBtn{
+    background-color: #417273;
+    border-radius: 30px;
+    margin-right: .5rem;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    float: right;
+}
+
+#prevBtn{
+    background-color: #417273;
+    border-radius: 30px;
+    margin-left: .5rem;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    float: left;
+}
+
+#nextBtn:hover, #prevBtn:hover{
+    background-color: #264d4e;
+}
+
+.tab input[type="submit"]{
+    background-image: linear-gradient(var(--required-color), #6f200e);
+    border: none;
+    border-radius: 60px;
+    padding: .7rem 1.5rem;
+    color: #eee;
+    /* width: 50%; */
+    max-width: 350px;
+    appearance: none;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    margin: 0 1rem;
+}
+
+.last-next-button{
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+}
+
+.last-next-button #prevBtn{
+    margin: 0 1rem;
+}
+
+.active-step{
+    transition: all .6s ease-in-out;
+    background-color: rgb(0, 0, 0);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
 #backToTop-res {
     position: absolute;
     background-color: none;
@@ -750,6 +1136,23 @@ footer{
 
 @media screen and (max-width: 640px) {
 
+    *{
+        box-sizing: border-box;
+    }
+
+    #main-hero-box{
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: #A8DADC;
+        padding: 8rem 0 2rem 0;
+    }
+
+    #hero-box,
+    .hero-image-container{
+        display: none;
+    }
+
     #menu{
         background-color: white;
         position: absolute;
@@ -780,7 +1183,6 @@ footer{
 
     .navigation{
         position: relative;
-        bottom: 150px;
     }
 
     .navigation li a{
@@ -798,5 +1200,71 @@ footer{
         cursor: pointer;
         float: right;
         margin: 1rem 2rem 0 0;
+    }
+
+    .hero-caption{
+        position: relative;
+        text-align: center;
+        margin: 2rem;
+        align-self: center;
+        top: 40%;
+    }
+
+    .hero-caption h1, .scoots{
+        font-size: 20px;
+    }
+
+    .explore{
+        font-size: clamp(20px, 40px, 40px);
+        padding-bottom: 2rem;
+    }
+
+    #first-section{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #weather-container{
+        flex-direction: column;
+    }
+
+    .map{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 0;
+    }
+
+    .map iframe{
+        width: 80%;
+        height: 80%;
+    }
+
+    .windchill{
+        color: white;
+        background-color: #000000;
+    }
+
+    .windchill img{
+        margin: 0 10px 0 0;
+        background-color: #A8DADC;
+        border-radius: 50%;
+    }
+
+    .firstContainer{
+        margin: 1rem 0;
+    }
+
+    #line{
+        display: none;
+    }
+
+    #forecast-container{
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    .forecastContainer{
+        margin: 2rem auto 0 auto;
+        width: 90%;
     }
 }

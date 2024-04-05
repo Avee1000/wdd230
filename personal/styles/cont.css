@@ -88,6 +88,25 @@ input[type="email"]
     appearance: none;
 }
 
+.contact-page-button{
+    margin: 1.5rem 1rem 0 1rem;
+    width: 80%;
+}
+
+.contact-page-button input{
+    margin: 0;
+    padding: .7rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #417273;
+    color: white;
+    float: right;
+}
+
+.contact-page-button input:hover{
+    background-color: #264d4e;
+}
+
 #contact-form-section textarea{
     display: block;
     background-color: #eee;
@@ -103,9 +122,29 @@ input[type="email"]
 #contact-section-caption{
     align-self: baseline;
     font-family: 'roboto';
+    margin-left: 1rem;
 }
 
 .contact-caption h1{
-    font-size: 60px;
-    
+    font-size: 90px;
+    font-weight: 800;
+    margin: 0;
 }
+
+.contact-caption p{
+    font-size: 30px;
+    margin: 0;
+}
+
+.contact-caption-scoots{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 0 0 3px 0;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    animation: scale-in 1.5s infinite;
+}
+
