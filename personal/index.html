@@ -6,16 +6,16 @@
     <meta name="author" content="Osamagumwende Flourish Idahosa-Sunny" />
     <meta
             name="description"
-            content="WDD 230 - Web Frontend Development
-            Osamagumwende Flourish Idahosa-Sunny" />
-    <meta property="og:title" content="Osamagumwende Flourish Idahosa-Sunny - WDD 230 - Web Frontend Development"/>
+            content="Scoots Rental - Home" />
+    <meta property="og:title" content="Scoots Rental Company"/>
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://avee1000.github.io/wdd230/images/edo.jpg" />
-    <meta property="og:url" content="https://avee1000.github.io/wdd230/" />
-    <title>Osamagumwende Flourish Idahosa-Sunny - WDD 230 - Web Frontend Development</title>
+    <meta property="og:url" content="https://avee1000.github.io/wdd230/personal" />
+    <title>Scoots Rental - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/raremedium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="/css/fontawesome.min.css">
@@ -68,7 +68,7 @@
         <div id="main-hero-box">
             <div id="hero-box">
                     <picture>
-                      <img src="images/background-large.jpg" alt="Hero" width="3000" height="2000">
+                      <img src="images/background-large.jpg" alt="Hero" loading="lazy" width="3000" height="2000">
                     </picture>
             </div>
             <div class="hero-image-container"></div>
@@ -108,7 +108,7 @@
                             <picture>
                                 <source srcset="images/homepage/slideshow3.webp" media="(max-width: 640px)">
                                 <source srcset="images/homepage/slideshow3.webp" media="(max-width: 1000px)">
-                                <img src="images/homepage/slideshow3.webp" alt="Hero" width="1000" height="500">
+                                <img src="images/homepage/slideshow3.webp" alt="Hero" loading="lazy" width="1000" height="500">
                             </picture>
                         </div>
 
@@ -116,7 +116,7 @@
                             <picture>
                                 <source srcset="images/homepage/slideshow4.webp" media="(max-width: 640px)">
                                 <source srcset="images/homepage/slideshow4.webp" media="(max-width: 1000px)">
-                                <img src="images/homepage/slideshow4.webp" alt="Hero" width="1000" height="500">
+                                <img src="images/homepage/slideshow4.webp" alt="Hero" loading="lazy" width="1000" height="500">
                             </picture>
                         </div>
 
@@ -124,7 +124,7 @@
                             <picture>
                                 <source srcset="images/homepage/aerial.webp" media="(max-width: 640px)">
                                 <source srcset="images/homepage/aerial.webp" media="(max-width: 1000px)">
-                                <img src="images/homepage/aerial.webp" alt="Hero" width="1000" height="500">
+                                <img src="images/homepage/aerial.webp" alt="Hero" loading="lazy" width="1000" height="500">
                             </picture>
                         </div>
 
@@ -132,7 +132,7 @@
                             <picture>
                                 <source srcset="images/homepage/slideshow5.webp" media="(max-width: 640px)">
                                 <source srcset="images/homepage/slideshow5.webp" media="(max-width: 1000px)">
-                                <img src="images/homepage/slideshow5.webp" alt="Hero" width="1000" height="500">
+                                <img src="images/homepage/slideshow5.webp" alt="Hero" loading="lazy" width="1000" height="500">
                             </picture>
                         </div>
 
@@ -305,7 +305,7 @@
         <footer>
                 <div id="diagonal-back">
                     <a id="logo_link2" href="index.html">
-                        <img class='logo2' src="images/" style="color: white;" alt="ServiceHub Logo">
+                        <img class='logo2' src="images/" loading="lazy" alt="ServiceHub Logo">
                     </a>
                     <p>SERVICEHUB &copy; 2023 - Osamagumwende Flourish Idahosa-Sunny</p>
                     <a class="footer-links" href="ourvision.html">Our Vision</a>
@@ -325,7 +325,15 @@
             </div>
        
         </footer>
+        <script>
+            const scrollToTop = document.querySelector(".accordion");
+
+            scrollToTop.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
         <script src="scripts/hamburger.js" ></script>
+        <script src="scripts/homepage.js" ></script>
         <script src="scripts/windchill.js" ></script>        
         <script src="scripts/slideshow.js" ></script>
 

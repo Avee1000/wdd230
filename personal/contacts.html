@@ -6,13 +6,12 @@
     <meta name="author" content="Osamagumwende Flourish Idahosa-Sunny" />
     <meta
             name="description"
-            content="WDD 230 - Web Frontend Development
-            Osamagumwende Flourish Idahosa-Sunny" />
-    <meta property="og:title" content="Osamagumwende Flourish Idahosa-Sunny - WDD 230 - Web Frontend Development"/>
+            content="Scoots Rental - Contact us" />
+    <meta property="og:title" content="Scoots Rental Company -Contact us"/>
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://avee1000.github.io/wdd230/images/edo.jpg" />
-    <meta property="og:url" content="https://avee1000.github.io/wdd230/" />
-    <title>Osamagumwende Flourish Idahosa-Sunny - WDD 230 - Web Frontend Development</title>
+    <meta property="og:url" content="https://avee1000.github.io/wdd230/personal" />
+    <title>Scoots Rental - Contact us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/cont.css">
@@ -25,14 +24,7 @@
 
 </head>
 <body>
-    <div id="content">
-        <!-- <div id="banner">
-            <p id="prompt"></p>
-            <span class="close">
-                <i class="fa-solid fa-times fa-2x"></i>
-            </span>
-        </div> -->
-        
+    <div id="content">        
         <header> 
             <a id="logo_link1" href="index.html">
                 <img class='logo1' src="images/servicehub-icon_white_smaller.png" alt="ServiceHub Logo" loading="lazy" width="50" height="50">
@@ -47,16 +39,16 @@
             </span>
             <ul class="navigation">
                 <li><a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
-                <li><a href="rentals.html" target="_blank" class="active"><i class="fa-solid fa-hand-holding-dollar"></i><span>Rentals</span></a></li>
+                <li><a href="rentals.html"><i class="fa-solid fa-hand-holding-dollar"></i><span>Rentals</span></a></li>
                 <li><a href="reservations.html" target="_blank"><i class="fa-solid fa-phone"></i><span>Reservations</span></a></li>
-                <li><a href="contacts.html"><i class="fa-solid fa-envelope-circle-check"></i><span>Contact Us</span></a></li>
+                <li><a href="contacts.html" class="active"><i class="fa-solid fa-envelope-circle-check"></i><span>Contact Us</span></a></li>
             </ul>
         </nav>
 
         <div id="contact-main-hero-box">
             <div id="contact-hero-box">
                     <picture>
-                      <img src="images/background-large.jpg" alt="Hero" width="3000" height="2000">
+                      <img src="images/background-large.jpg" alt="Hero" loading="lazy" width="3000" height="2000">
                     </picture>
             </div>
             <div class="contact-hero-image-container"></div>
@@ -139,6 +131,14 @@
        
         </footer>
 
+        <script>
+            const scrollToTop = document.querySelector(".accordion");
+
+            scrollToTop.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+        <script src="scripts/hamburger.js" ></script>
 
     </div>
 </body>
