@@ -1,36 +1,36 @@
-    document.body.style.overflow = "hidden";
-    document.getElementById("myNav").style.height = "100%";
-    
+document.body.style.overflow = "hidden";
+document.getElementById("myNav").style.height = "100%";
 
 
-    document.getElementById("close").addEventListener("click", () => {
-        document.body.style.overflow = "";
-        document.querySelector("#myNav").style.width = "0";
-        document.querySelector('.hero-caption h1').classList.add('hero-caption-h1-fade');
+
+document.getElementById("close").addEventListener("click", () => {
+    document.body.style.overflow = "";
+    document.querySelector("#myNav").style.width = "0";
+    document.querySelector('.hero-caption h1').classList.add('hero-caption-h1-fade');
+});
+
+
+
+const infoButtons = document.querySelectorAll('.info-button');
+
+infoButtons.forEach((button) => { 
+
+    button.addEventListener("mouseover", () => {
+        const parentElement = button.parentElement;
+        const imgTextOverlay = parentElement.nextElementSibling;
+
+        imgTextOverlay.style.height = "100%";
+        imgTextOverlay.style.bottom = "0";
     });
 
+    button.addEventListener("mouseout", () => { 
+        const parentElement = button.parentElement;
+        const imgTextOverlay = parentElement.nextElementSibling;
 
-
-    const infoButtons = document.querySelectorAll('.info-button');
-
-    infoButtons.forEach((button) => { 
-
-        button.addEventListener("mouseover", () => {
-            const parentElement = button.parentElement;
-            const imgTextOverlay = parentElement.nextElementSibling;
-
-            imgTextOverlay.style.height = "100%";
-            imgTextOverlay.style.bottom = "0";
-        });
-
-        button.addEventListener("mouseout", () => { 
-            const parentElement = button.parentElement;
-            const imgTextOverlay = parentElement.nextElementSibling;
-
-            imgTextOverlay.style.height = "";
-            imgTextOverlay.style.bottom = "";
-        });
+        imgTextOverlay.style.height = "";
+        imgTextOverlay.style.bottom = "";
     });
+});
 
 
 

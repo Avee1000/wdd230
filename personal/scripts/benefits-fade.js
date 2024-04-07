@@ -30,10 +30,3 @@ window.addEventListener('scroll', fadeInElements);
 
 
 /////////////////////////////////////////////////////////////////////
-
-// JavaScript to scroll to the top of the page when the "Back to top" link is clicked:
-const scrollToTop = document.querySelector(".accordion");
-
-scrollToTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
