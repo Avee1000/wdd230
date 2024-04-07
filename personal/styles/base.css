@@ -166,6 +166,8 @@ nav{
     font-size: 25px;
     font-weight: 900; /*always use this after using font awesome unicodes */
     cursor: pointer;
+    margin: 1rem 2rem 0 0;
+
 }
 
 .navigation{
@@ -412,7 +414,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     position: relative;
     margin: auto;
 }
@@ -1190,6 +1191,15 @@ footer{
         transition: 0.5s; /
     }
 
+    .show{
+        height: 100%;
+    }
+
+    .delete-span{
+        color: black;
+        display: none;
+    }
+
     .navigation{
         position: relative;
     }
@@ -1327,6 +1337,15 @@ footer{
         object-fit: cover;    
     }
 
+    #white-background-third-container{
+        padding: 0;
+    }
+    
+    #third-section article{
+        /* background-color: #E63946; */
+        text-align: center;
+    }
+
     .homepage-scooters-row{
         width: 100%;
     }
@@ -1367,14 +1386,14 @@ footer{
     }
 
     .text h1 {
-        font-size: 30px; /* Adjust based on screen width */
+        font-size: 30px; 
         font-weight: 700;
         align-self: center;
         margin: 15px 0;
     }
     
     .text h3 {
-        font-size: 20px; /* Adjust based on screen width */
+        font-size: 20px;
         font-weight: 400;
         margin: 6px 30px;
     }
