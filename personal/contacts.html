@@ -14,6 +14,7 @@
     <title>Scoots Rental - Contact us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/raremedium.css">
     <link rel="stylesheet" href="styles/cont.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -52,9 +53,10 @@
 
         <div id="contact-main-hero-box">
             <div id="contact-hero-box">
-                    <picture>
-                      <img src="images/background-large.jpg" alt="Hero" loading="lazy" width="3000" height="2000">
-                    </picture>
+                <picture>
+                    <source srcset="images/background-medium.jpg" media="(max-width: 1660px)">
+                    <img src="images/background-large.jpg" alt="Hero" loading="lazy" width="3000" height="2000">
+                </picture>
             </div>
             <div class="contact-hero-image-container"></div>
 
@@ -89,7 +91,7 @@
 
                         <label for="email">Email<input type="email" id="email" name="user_email"></label>
 
-                        <label for="comment">Message<textarea id="comment" name="user_comment" ></textarea></label>
+                        <label for="comment">Message<textarea id="comment" placeholder="Enter your message/ " name="user_comment" ></textarea></label>
 
                         <div class="contact-page-button">
                             <input type="submit" value="Submit">

@@ -1,8 +1,6 @@
 document.body.style.overflow = "hidden";
 document.getElementById("myNav").style.height = "100%";
 
-
-
 document.getElementById("close").addEventListener("click", () => {
     document.body.style.overflow = "";
     document.querySelector("#myNav").style.width = "0";
@@ -32,6 +30,18 @@ infoButtons.forEach((button) => {
     });
 });
 
+const toTop = document.querySelector('.accordion');
+
+window.addEventListener('scroll', function () {
+
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 0) {
+        toTop.classList.add('banner-fixed');
+    } else {
+        toTop.classList.remove('banner-fixed');
+    }
+});
 
 
 // const hidden = document.getElementById("hidden-links");

@@ -198,12 +198,20 @@
     }
     /*-----------------------------------------RESERVATION-----------------------------------------------*/
     .spacer {
-        margin: 10rem 0 0 15rem;
+        margin: 10rem 0 7rem 15rem;
     }
 
     .spacer p{
         padding-right: 10 1rem;
     }
+
+    .h1-scoots{
+        padding: 6px;
+        background-color: #000000;
+        color: white;
+        border-radius: 10px;
+    }
+
 
     .black{
         width: 20%;
