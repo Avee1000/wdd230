@@ -127,7 +127,7 @@
         margin: 2rem auto;
     }
 
-    .article-container article h1{
+    .article-container article h2{
         margin: auto 1.5rem;
         padding: 0;
         font-size: 70px;
@@ -176,7 +176,7 @@
         margin: auto 30px;
     }
 
-    .text h1{
+    .text h2{
         font-size: 40px;
         font-weight: 700;
     }
@@ -369,7 +369,7 @@
         margin: 0 0 2rem 0;
     }
 
-    .contact-caption h1{
+    .contact-caption h2{
         font-size: 70px;
     }
 
@@ -382,5 +382,17 @@
         font-size: 22px;
     }
 
+    #footer-links{
+        width: 100%;
+    }
+
+    .links-container{
+        width: auto;
+    }
+
+    .links-container a{
+        width: 100%;
+        text-align: left;
+    }
 
 }

@@ -121,7 +121,7 @@
         grid-column: 1/2;
     } */
 
-    .article-container article h1{
+    .article-container article h2{
         font-size: 70px;
         font-size: 900;
     }
@@ -131,7 +131,7 @@
         font-size: 450;
     }
 
-    #third-section article h1{
+    #third-section article h2{
         padding: 0;
         width: 80%;
         margin: auto;
@@ -167,7 +167,7 @@
         margin: auto 30px;
     }
 
-    .text h1{
+    .text h2{
         font-size: 40px;
         font-weight: 700;
     }
@@ -236,6 +236,15 @@
     
     textarea{
         width: 350px;
+    }
+
+    .links-container{
+        width: auto;
+    }
+
+    .links-container a{
+        width: 100%;
+        text-align: left;
     }
 
 }

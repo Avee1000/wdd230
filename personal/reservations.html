@@ -74,7 +74,7 @@
                     <div class="red"></div>
 
                     <div class="benefits-text">                   
-                         <h1>Rental Agreement <br>Information</h1>
+                         <h2>Rental Agreement <br>Information</h2>
                         <ul>
                             <li class="fade-in">A $50 security deposit is required to confirm reservations</li>
                             <li class="fade-in">A valid drivers license is required in hand at the time of rental.</li>
@@ -110,52 +110,53 @@
                             <label>Mobile Phone No.<span class="fa-asterisk"></span><input type="tel"  id="phone" name="phone" required></label>
                         </fieldset>                                            
                         <div class="next-button">
-                            <a type="button" id="nextBtn" onclick="nextPrev(1)">Next</a>
+                            <button type="button" class="nextBtn" onclick="nextPrev(1)">Next</button>
                         </div>
                     </div>
         
-                    <!-------------------------------- RENTAL -------------------------------------->
                     <div class="tab">
                         <fieldset>
                             <h1>Rental Details</h1>
                             <label>Date Needed <span class="fa-asterisk"></span>
-                                <div id="birthdate-container">
-                                    <input type="month" id="date"  name="birthMonth"  value="2024-01" required>
-                                    <select name="day" id="day"><option value="">Day</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                        <option value="14">14</option>
-                                        <option value="15">15</option>
-                                        <option value="16">16</option>
-                                        <option value="17">17</option>
-                                        <option value="18">18</option>
-                                        <option value="19">19</option>
-                                        <option value="20">20</option>
-                                        <option value="21">21</option>
-                                        <option value="22">22</option>
-                                        <option value="23">23</option>
-                                        <option value="24">24</option>
-                                        <option value="25">25</option>
-                                        <option value="26">26</option>
-                                        <option value="27">27</option>
-                                        <option value="28">28</option>
-                                        <option value="29">29</option>
-                                        <option value="30">30</option>
-                                        <option value="31">31</option>
-                                    </select>
-                                </div>
+                                <!-- <span id="birthdate-container"> -->
+                                    <input type="month" id="date"  name="birthMonth"  value="2024-01" required></label>
+
+                            <label>
+                                <select name="day" id="day"><option value="">Day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
                             </label>
+                                <!-- </span> -->
                             <label>Number <span class="fa-asterisk"></span><input type="number" id="number" name="number" required></label>
 
                             <div class="rentail">Period <span class="fa-asterisk"></span></div>
@@ -181,8 +182,8 @@
                                 </ul>
                         </fieldset>
                         <div class="next-button">
-                            <a type="button" id="nextBtn" onclick="nextPrev(1)">Next</a>
-                            <a type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</a>
+                            <button type="button" class="nextBtn" onclick="nextPrev(1)">Next</button>
+                            <button type="button" class="prevBtn" onclick="nextPrev(-1)">Previous</button>
                         </div>
                     </div>
 
@@ -194,11 +195,11 @@
                             <label>Cruise Line <span class="optional">(if applicable)</span><input type="text" id="cruise" name="cruise" ></label>
 
                             <label>Special Accommodations/Comments<span class="optional">(Optional)</span>
-                                <textarea id="text" name="businessDesc" cols="30" rows="6" id="businessDesc" 
+                                <textarea id="text" name="businessDesc" cols="30" rows="6" 
                                 placeholder="Enter a special accommodation or comment such as location of a drop-off request" spellcheck="true" ></textarea></label>
                         </fieldset>
                         <div class="last-next-button">
-                            <a type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</a>
+                            <button type="button" class="prevBtn" onclick="nextPrev(-1)">Previous</button>
                             <input type="submit" value="Make my reservation" id="submit">
                         </div>
                     </div>            
@@ -219,27 +220,48 @@
         </div>
 
         <footer>
-                <div id="diagonal-back">
-                    <a id="logo_link2" href="index.html">
-                        <img class='logo2' src="images/black.webp"  alt="ServiceHub Logo" loading="lazy">
-                    </a>
-                    <p>SERVICEHUB &copy; 2023 - Osamagumwende Flourish Idahosa-Sunny</p>
-                    <a class="footer-links" href="ourvision.html">Our Vision</a>
-                    <a class="footer-links" href="contactus.html">Contact Us</a>
-                    <a class="footer-links" href="site-plan.html">Site Plan</a>
-                    <div class="social">
+            <div id="diagonal-back">
+                <a id="logo_link2" href="index.html">
+                    <img class='logo2' src="images/black.webp"  alt="ServiceHub Logo" loading="lazy">
+                </a>
+
+                <div class="links-container">
+                    <a class="footer-links" href="index.html">Go to Homepage</a>
+                    <a class="footer-links" href="contactus.html">Give us a Feedback</a>
+                    <a class="footer-links" href="Rental.html">Make a Rental</a>
+                </div>
+
+                <div class="information-container">
+                    <div class="info-container-again">
+                        <article><i class="fa-solid fa-location-dot"></i><h5>Calle 2 Nte 100, Centro, 77600 Cozumel, Q.R., Mexico</h5></article>
+                        <article><i class="fa-solid fa-location-dot"></i><h5>77675 San Miguel de Cozumel, Quintana Roo, Mexico</h5></article>
+                        <article><i class="fa-solid fa-envelope"></i><h5>eddyidahosa01@gmail.com</h5></article>
+                        <article><i class="fa-solid fa-phone"></i><h5>+234 091 361 961 76</h5></article>
+                    </div>
+                </div>
+
+                <div id="social-container">
+                    <div class="social-links">
                         <a href="https://facebook.com" target="_blank">
-                            <img src="images/facebook.png" alt="fb icon">
+                            <i class="fa-brands fa-facebook-f"></i>                            
                         </a>
                         <a href="https://twitter.com" target="_blank">
-                            <img src="images/twitter.png" alt="twitter icon">
+                            <i class="fa-brands fa-twitter"></i>
                         </a>
                         <a href="https://instagram.com" target="_blank">
-                            <img src="images/instagram.png" alt="instagram icon">
+                            <i class="fa-brands fa-instagram"></i>
                         </a>
-                     </div>
+                        <a href="https://en.wikipedia.org/wiki/Cozumel" target="_blank">
+                            <i class="fa-brands fa-wikipedia-w"></i>
+                        </a>
+                    </div>
+
+                    <div class="copyright">
+                        <p><span>~Scoots~</span> &copy;Copyright. All rights reserved.<br><br>2024 - Osamagumwende Flourish Idahosa-Sunny</p>
+                    </div>
+
+                    </div>
             </div>
-       
         </footer>
 
         <script>
