@@ -15,49 +15,37 @@
         font-weight: 900;
     }
 
+    header{
+        padding: 0 5% 0 3%;
+    }
+
     header h1{
-        font-size: 2rem;
-        padding: .5rem;
+        font-size: 1.7rem;
+        right: 0;
     }
 
- 
-    nav {
-        width: 100%;
-        display: block;
+    .logo1{
+        border-radius: 50%;
+        width: 70px; height: 70px;
     }
-
 
     #menu{
         display: none;
     }
 
-    .navigation{
+    .navigation {
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        gap: 25px;
+    }
+
+    .navigation a{
+        padding: 8px 12px;
+        font-size: 15px;
     }
 
     .navigation li{
         display: block;
-        flex: 1 1 auto;
-    }
-
-    .navigation a {
-        text-align: center;
-        color: rgb(0, 0, 0);
-        font-size: 1.1rem;
-        padding: 1rem 1rem;
-        transition: border-bottom 0.7s ease;
-    }
-
-    .navigation li:hover {
-        transition: all 1s;
-        background-color: #74b8ba;
-    }
-
-    .active{
-        transition: 1s;
-        background-color: black;
-        color: white !important;
     }
 
     #main-hero-box{

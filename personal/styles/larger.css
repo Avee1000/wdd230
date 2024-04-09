@@ -18,12 +18,11 @@
     #menu{
         display: none;
     }
-
+/* 
     nav{
         display: flex;
         gap: 30px;
-
-    }
+    } */
 
     .navigation li{
         display: block;

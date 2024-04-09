@@ -113,6 +113,7 @@ body, html {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    font-weight: 500;
     transition: 0.5s ease-in-out;
 }
 
@@ -155,10 +156,9 @@ header {
 header h1{
     position: relative;
     font-family: 'roboto', arial, helvetica;
-    color: white;
+    color: black;
     font-size: 40px;
     font-weight: 600;
-    right: 20px;
 }
 
 .header-box{
@@ -168,17 +168,15 @@ header h1{
 }
 
 .logo1{
+    background-color: #000000;
     position: relative;
-    width: auto;
-    height: 100px;
+    border-radius: 50%;
+    width: 80px; height: 80px;
 }
 
 .delete{
     display: none;
 }
-
-/*-----------------------------------------------------------------------------------------------*/
-
 
 #menu::before {
     content: "\f0c9";
@@ -214,13 +212,13 @@ nav{
     font-family: 'roboto';
     padding: 11px 15px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     border-radius: 99px;
     transition: 0.3s;
     color: black;
     border-bottom: 2px solid transparent; 
-    transition: border-bottom 0.7s ease;
+    transition: 0.4s ease-in-out;
 }
 
 .navigation li i{
@@ -233,18 +231,46 @@ nav{
     color: white;
 }
 
-.navigation li:hover {
-    transition: all 1s;
-}
-
 .navigation a:hover{
     color: white;
     background-color: #000000;
 }
 
-ul.navigation li:hover > a:not(:hover) {
+.navigation:hover > li a:not(:hover){
     background: none;
-    color: red;
+    color: #000;
+}
+
+#contact-header nav, #contact-header{
+    background-color: #000000;
+}
+
+#contact-header img{
+    background-color: white;
+}
+
+#contact-header h1{
+    color: white;
+}
+
+#contact-header a{
+    color: white;
+}
+
+#contact-header .navigation a:hover{
+    color: black;
+    background-color: white;
+}
+
+#contact-header a.active{
+    transition: 1s;
+    background-color: white;
+    color: black;
+}
+
+#contact-header .navigation:hover > li a:not(:hover){
+    background: none;
+    color: white;
 }
 
 .hero-caption h1{
@@ -1303,17 +1329,57 @@ textarea{
 
 footer{
     background-color: #000000;
-    place-items: center;
-    box-sizing: border-box;
-    display: grid;
 }
 
 #diagonal-back{
-	bottom: 0;
-	width: 100%;
-	padding: 8px;
+    height: 500px;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 2fr 2fr;
+	padding: 30px 80px;
+    margin: auto;
 }
 
+.logo2{
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    width: 80px; height: 80px;
+}
+
+#footer-links{
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #999;
+}
+
+#social-container{
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright p{
+    font-family: 'roboto';
+    color: white;
+}
+
+.copyright span{
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    padding: 2px;
+}
 @media screen and (max-width: 640px) {
 
     *{
@@ -1322,6 +1388,15 @@ footer{
 
     #content{
         overflow-x: hidden !important;
+    }
+
+    .header-box{
+        margin: 0;      
+    }
+
+    .logo1{
+        border-radius: 50%;
+        width: 50px; height: 50px;
     }
 
     #main-hero-box{
@@ -1345,6 +1420,11 @@ footer{
         margin: 0;   
         padding: 10px; 
         border-radius: 2px;
+    }
+
+    .navigation{
+        display: block;
+        width: 100%;
     }
 
     .navigation li {
@@ -1601,10 +1681,11 @@ footer{
         height: auto;
         background-color: #A8DADC;
         margin: 0;
-        padding: 3rem;
+        padding: 10rem 3rem 3rem 3rem;
     }
 
     .spacer h1{
+        width: 100%;
         text-align: center;
         font-size: 45px;
     }
