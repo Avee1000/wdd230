@@ -1379,6 +1379,7 @@ footer{
     background-color: white;
     border-radius: 7px;
     padding: 2px;
+    font-weight: 800;
 }
 @media screen and (max-width: 640px) {
 
