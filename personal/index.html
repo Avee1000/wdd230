@@ -17,9 +17,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/raremedium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/css/brands.css">
     <link rel="stylesheet" href="/css/solid.css">
     <link rel="icon" href="images/favicon.ico">
 
@@ -32,20 +30,19 @@
                 <i class="fa-solid fa-times fa-2x"></i>
             </span>
         </div> -->
-        
-        <header> 
-            <div id="myNav" class="overlay">
-                <div class="overlay-content">
-                    <span class="closebtn">
-                        <i id="close" class="fa-solid fa-times fa-xs"></i>
-                    </span>
-                    
-                    <div class="heroBtn" id="message">
-                        <a href="reservations.html" target="_blank">Make a Booking</a>
-                    </div>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <span class="closebtn">
+                    <i id="close" class="fa-solid fa-times fa-xs"></i>
+                </span>
+                
+                <div class="heroBtn" id="message">
+                    <a href="reservations.html" target="_blank">Make a Booking</a>
                 </div>
             </div>
-
+        </div>
+        
+        <header> 
             <div class="header-box">
                 <a id="logo_link1" href="index.html">
                     <img class='logo1' src="images/scoots.jpg" alt="ServiceHub Logo" loading="lazy" width="50" height="50">
@@ -53,20 +50,22 @@
                 <h1>Scoots</h1>
             </div>
 
-            <a id="menu"></a>
+            <nav>
+                <span class="delete">
+                    <i class="fa-solid fa-times fa-2x"></i>
+                </span>
+                <ul class="navigation">
+                    <li><a href="#" class="active"><span>Home</span></a></li>
+                    <li><a href="rentals.html" target="_blank"><span>Rentals</span></a></li>
+                    <li><a href="reservations.html" target="_blank"><span>Reservations</span></a></li>
+                    <li><a href="contacts.html"><span>Contact Us</span></a></li>
+                </ul>
+            </nav>
+
         </header>
-        
-        <nav>
-            <span class="delete">
-                <i class="fa-solid fa-times fa-2x"></i>
-            </span>
-            <ul class="navigation">
-                <li><a href="#" class="active"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
-                <li><a href="rentals.html" target="_blank"><i class="fa-solid fa-hand-holding-dollar"></i><span>Rentals</span></a></li>
-                <li><a href="reservations.html" target="_blank"><i class="fa-solid fa-phone"></i><span>Reservations</span></a></li>
-                <li><a href="contacts.html"><i class="fa-solid fa-envelope-circle-check"></i><span>Contact Us</span></a></li>
-            </ul>
-        </nav>
+        <a id="menu"></a>
+
+
 
         <div id="main-hero-box">
             <div id="hero-box">

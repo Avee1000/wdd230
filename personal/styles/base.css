@@ -41,7 +41,7 @@ body, html {
 .banner-fixed {
     display: block;
     position: fixed; 
-    top: 0; 
+    bottom: 0; 
     left: 0; 
     z-index: 1; 
     width: 100%;
@@ -139,9 +139,17 @@ body, html {
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 header {
+    /* width: 100%;
+    grid-template-columns: auto auto; */
+    background-color: #A8DADC;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: absolute;
     width: 100%;
-    grid-template-columns: auto auto;
-    background-color: #000000;
+    /* z-index: 100; */
 }
 
 header h1{
@@ -165,10 +173,6 @@ header h1{
     height: 100px;
 }
 
-nav{
-    background-color: #A8DADC;
-}
-
 .delete{
     display: none;
 }
@@ -184,12 +188,17 @@ nav{
     font-weight: 900; /*always use this after using font awesome unicodes */
     cursor: pointer;
     margin: 1rem 2rem 0 0;
+}
 
+nav{
+    background-color: #A8DADC;
 }
 
 .navigation{
     list-style: none;
     margin: auto;
+    display: flex;
+    gap: 28px;
     padding: 0;
 }
 
@@ -198,23 +207,44 @@ nav{
 }
 
 .navigation li *{
-    padding: 5px 3px;
+    padding: 0;
 }
 
 .navigation a{
-    place-items: center;
-    display: block;
+    font-family: 'roboto';
+    padding: 11px 15px;
     text-decoration: none;
-    font-family: 'Belanosima', Times, serif;
-    font-weight: lighter;
-    transition: 0.5s;
-    font-size: 24px;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 99px;
+    transition: 0.3s;
     color: black;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.7s ease;
 }
 
 .navigation li i{
     font-size: 23px;
+}
+
+.navigation a.active{
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+.navigation li:hover {
+    transition: all 1s;
+}
+
+.navigation a:hover{
+    color: white;
+    background-color: #000000;
+}
+
+ul.navigation li:hover > a:not(:hover) {
+    background: none;
+    color: red;
 }
 
 .hero-caption h1{
@@ -370,11 +400,6 @@ main{
     border-left: rgb(255, 55, 0, .5) 1px solid;
     padding: 0 1rem;
 }
-
-.toTop-fixed{
-
-}
-
 
 #backToTop button{
     display: block;

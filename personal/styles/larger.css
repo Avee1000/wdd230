@@ -19,37 +19,27 @@
         display: none;
     }
 
-    .navigation{
+    nav{
         display: flex;
-        justify-content: center;
-        list-style: none;
-        margin: 0;
-    }
+        gap: 30px;
 
-    .navigation a{
-        padding: 1rem 2.5rem;
-        font-size: 1.2rem;
     }
 
     .navigation li{
         display: block;
     }
 
-    .navigation a {
-        border-bottom: 2px solid transparent; /*Initially transparent*/
+    /* .navigation a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 99px;
+        transition: 0.3s;
+        color: white;
+        border-bottom: 2px solid transparent; 
         transition: border-bottom 0.7s ease;
     }
-    
-    .navigation li:hover {
-        transition: all 1s;
-        background-color: #74b8ba;
-    }
-    
-    .active{
-        transition: 1s;
-        background-color: black;
-        color: white !important;
-    }
+     */
 
     #main-hero-box{
         display: grid;

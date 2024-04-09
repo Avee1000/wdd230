@@ -18,38 +18,11 @@
     #menu{
         display: none;
     }
-
-    .navigation{
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        margin: 0;
-    }
-
-    .navigation a{
-        padding: 1rem 2.5rem;
-        font-size: 1.2rem;
-    }
-
+    
     .navigation li{
         display: block;
     }
 
-    .navigation a {
-        border-bottom: 2px solid transparent; /*Initially transparent*/
-        transition: border-bottom 0.7s ease;
-    }
-    
-    .navigation li:hover {
-        transition: all 1s;
-        background-color: #74b8ba;
-    }
-    
-    .active{
-        transition: 1s;
-        background-color: black;
-        color: white !important;
-    }
 
     #main-hero-box{
         display: grid;
