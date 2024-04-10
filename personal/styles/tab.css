@@ -1,0 +1,59 @@
+table td{
+    text-align: center;
+}
+
+#rental-main-hero-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#rental-hero-box{
+    grid-column: 1/3;
+    grid-row: 1/5;
+}
+
+.rental-hero-image-container{
+    grid-column: 1/3;
+    grid-row: 1/5;
+    height: 100%;
+    background-image: linear-gradient(#000000, rgba(0, 0, 0, 0.767));
+}
+
+#rental-hero-box img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rental-hero-caption{
+    position: relative;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    color: white;
+    font-family: "Roboto";
+}
+
+.rental-hero-caption h1{
+    opacity: 0;
+    font-size: 120px;
+    margin: 0;
+    animation: fade-in 6s forwards linear;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1660px) {
+
+    #rental-hero-box{
+        grid-row: 1/3;
+    }
+
+    .rental-hero-image-container{
+        grid-row: 1/3;
+    }
+
+    .rental-hero-caption{
+        grid-row: 2/3;
+    }
+}

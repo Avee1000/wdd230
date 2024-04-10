@@ -14,34 +14,34 @@ const infoButtons = document.querySelectorAll('.info-button');
 infoButtons.forEach((button) => { 
 
     button.addEventListener("mouseover", () => {
-        const parentElement = button.parentElement;
-        const imgTextOverlay = parentElement.nextElementSibling;
+        // const parentElement = button.parentElement;
+        const imgTextOverlay = button.nextElementSibling.nextElementSibling;
 
         imgTextOverlay.style.height = "100%";
         imgTextOverlay.style.bottom = "0";
     });
 
     button.addEventListener("mouseout", () => { 
-        const parentElement = button.parentElement;
-        const imgTextOverlay = parentElement.nextElementSibling;
+        // const parentElement = button.parentElement;
+        const imgTextOverlay = button.nextElementSibling.nextElementSibling;
 
         imgTextOverlay.style.height = "";
         imgTextOverlay.style.bottom = "";
     });
 });
 
-const toTop = document.querySelector('.accordion');
+// const toTop = document.querySelector('.accordion');
 
-window.addEventListener('scroll', function () {
+// window.addEventListener('scroll', function () {
 
-    const scrollPosition = window.scrollY;
+//     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 0) {
-        toTop.classList.add('banner-fixed');
-    } else {
-        toTop.classList.remove('banner-fixed');
-    }
-});
+//     if (scrollPosition > 0) {
+//         toTop.classList.add('banner-fixed');
+//     } else {
+//         toTop.classList.remove('banner-fixed');
+//     }
+// });
 
 
 // const hidden = document.getElementById("hidden-links");

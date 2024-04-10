@@ -1,5 +1,10 @@
 @media screen and (min-width: 640px) and (max-width: 1000px) {
 
+    *{
+        box-sizing: border-box;
+    }
+
+
     .closebtn {
         position: relative;
         display: block;
@@ -34,9 +39,11 @@
     }
 
     .navigation {
+        position: relative;
+        left: 20px;
         width: 100%;
         display: flex;
-        gap: 25px;
+        gap: 16px;
     }
 
     .navigation a{
@@ -140,6 +147,27 @@
         animation: switch 2s infinite;
     }
 
+    #third-section article{
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    #third-section article h2{
+        margin: 0;
+        font-size: 34px;
+        font-weight: 800;
+    }
+
+    #third-section article h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #white-background-third-container{
+        padding: 0;
+    }
+
     .homepage-scooters-row{
         width: 100%;
     }
@@ -208,7 +236,7 @@
 
     .spacer h1{
         font-family: "Roboto";
-        font-weight: 1900;
+        font-weight: 900;
         font-size: 60px;
         line-height: 1.2;
         text-align: left;;
@@ -393,6 +421,34 @@
     .links-container a{
         width: 100%;
         text-align: left;
+    }
+
+    #diagonal-back{
+        display: flex;
+        gap: 30px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #logo-link2{
+        margin: 2rem 0 4rem 0;
+    }
+
+    .links-container{
+        margin: 2rem 0;
+    }
+
+    .links-container a{
+        text-align: center;
+        text-decoration:underline;
+    }
+
+    .information-container{
+        margin: 2rem 0;
+    }
+
+    .social-links{
+        margin-top: 45px;
     }
 
 }

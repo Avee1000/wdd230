@@ -15,6 +15,10 @@
         font-weight: 900;
     }
 
+    #prompt{
+        font-size: 30px;
+    }
+
     #menu{
         display: none;
     }
