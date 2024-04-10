@@ -305,5 +305,26 @@
         width: 100%;
         text-align: left;
     }
+
+    /*--------------------------------------------------*/
+    #rental-main-hero-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #rental-hero-box{
+        grid-row: 1/3;
+    }
+
+    .rental-hero-image-container{
+        grid-row: 1/3;
+    }
+
+    .rental-hero-caption{
+        align-self: center;
+        bottom: 20%;
+        grid-row: 2/3;
+    }
         
 }

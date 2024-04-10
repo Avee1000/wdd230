@@ -5,14 +5,14 @@ function showTab(n) {
     const tabs = document.getElementsByClassName("tab");
     tabs[n].style.display = "block";
     if (n === 0) {
-        document.getElementById("prevBtn").style.display = "none";
+        document.querySelector(".prevBtn").style.display = "none";
     } else {
-        document.getElementById("prevBtn").style.display = "inline";
+        document.querySelector(".prevBtn").style.display = "inline";
     }
     if (n === tabs.length - 1) {
-        document.getElementById("nextBtn").innerHTML = "Submit";
+        document.querySelector(".nextBtn").innerHTML = "Submit";
     } else {
-        document.getElementById("nextBtn").innerHTML = "Next";
+        document.querySelector(".nextBtn").innerHTML = "Next";
     }
     fixStepIndicator(n);
 }
