@@ -124,7 +124,7 @@ body, html {
     color: white;
 }
 
-.closebtn {
+.closebtn1 {
     position: relative;
     display: block;
     text-align: center;
@@ -133,7 +133,7 @@ body, html {
     color: white;
 }
 
-.closebtn i{
+.closebtn1 i{
     cursor: pointer;
     font-size: 2rem;
     font-weight: 900;
@@ -173,25 +173,17 @@ header h1{
     width: 80px; height: 80px;
 }
 
-.delete{
+.closebtn{
     display: none;
 }
 
 #menu::before {
     content: "\f0c9";
     font-family: 'Font Awesome 6 Free';
-    color: white;
+    color: black;
     font-size: 2rem;
     font-weight: 900; /*always use this after using font awesome unicodes */
     cursor: pointer;
-}
-
-#menu.show::before {
-    content: "\f00d";
-    font-family: 'Font Awesome 6 Free';
-    color: white;
-    font-size: 2rem;
-    font-weight: 900;
 }
 
 nav{
@@ -1547,7 +1539,6 @@ footer{
         box-sizing: border-box;
     }
 
-
     #content{
         margin: 0;
         transition: margin-left .5s;
@@ -1576,43 +1567,84 @@ footer{
     }
 
     #menu{
-        display: block;
-        font-weight:300;
-        text-decoration: none;
-        padding: 12px 15px;
-        background-color: #000000;
-        cursor: pointer;
+        background-color: white !important;
+        position: relative;
+        right: 0;
+        top: 0;
+        margin: 1rem 1rem 0 0;   
+        padding: 10px; 
+        border-radius: 2px;
     }
 
-    nav {
-        background-color: #000000;
-    }
-
-    
-    
-    .navigation{
-        display: block ;
-        list-style: none;
-        margin: auto;
-        padding: 0;
-    }
-    
-    .navigation a{
-        text-decoration: none;
-        color: white;
-        display: block;
+    #nav nav{
+        height: 100%;
+        width: 100%;
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0);
+        overflow-x: hidden; 
         transition: 0.5s;
-        font-size: 22px;
-        padding: 13px 15px;
-        cursor: pointer;    
     }
-    
-    .navigation li {
-        display: none;
+
+    .navigation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 7rem 0 0 0;
     }
-    
-    .show li {
+
+    .navigation a{
+        padding: 10px;
+        font-size: 20px;
+        color: white !important;
+        text-decoration: none;
         display: block;
+        transition: all .4s ease-in-out;
+    }
+
+    .navigation a:hover{
+        background-color: white;
+        color: black !important;
+    }
+
+    .navigation a.active{
+        background-color: white;
+        color: black !important;
+    }
+
+    #nav nav a{
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        transition: all .4s ease-in-out;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .closebtn{
+        display: block;
+        position: absolute;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .closebtn i{
+        display: block;
+        margin: 0;   
+        color: white;
+    }
+    
+    .navigation:hover > li a:not(:hover){
+        background: none;
+        color: white !important;
     }
 
     .hero-caption{

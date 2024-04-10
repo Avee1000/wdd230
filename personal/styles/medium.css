@@ -5,7 +5,7 @@
     }
 
 
-    .closebtn {
+    .closebtn1 {
         position: relative;
         display: block;
         text-align: center;
@@ -14,7 +14,7 @@
         color: white;
     }
     
-    .closebtn i{
+    .closebtn1 i{
         cursor: pointer;
         font-size: 2rem;
         font-weight: 900;
@@ -34,7 +34,7 @@
         width: 70px; height: 70px;
     }
 
-    #menu{
+    #menu, .closebtn{
         display: none;
     }
 

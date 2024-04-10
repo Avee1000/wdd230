@@ -34,7 +34,7 @@
         </div>
         <div id="myNav" class="overlay">
             <div class="overlay-content">
-                <span class="closebtn">
+                <span class="closebtn1">
                     <i id="close" class="fa-solid fa-times fa-xs"></i>
                 </span>
                 
@@ -52,16 +52,20 @@
                 <h1>Scoots</h1>
             </div>
 
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html"  class="active">Home</a></li>
-                    <li><a href="rentals.html">Rentals</a></li>
-                    <li><a href="reservations.html" >Reservations</a></li>
-                    <li><a href="contacts.html" >Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <a id="menu"></a>
+            <div id="nav">
+                <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-times fa-2x"></i></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html"  class="active">Home</a></li>
+                        <li><a href="rentals.html">Rentals</a></li>
+                        <li><a href="reservations.html" target="_blank">Reservations</a></li>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>     
+        <a href="javascript:void(0)" onclick="openNav()" id="menu"></a>
+
 
 
         <div id="main-hero-box">
