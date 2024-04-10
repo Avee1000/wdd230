@@ -38,6 +38,10 @@
         display: none;
     }
 
+    #nav{
+        display: block;
+    }
+
     .navigation {
         position: relative;
         left: 20px;

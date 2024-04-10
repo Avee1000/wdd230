@@ -1,9 +1,9 @@
 /* Open */
 function openNav() {
-    document.getElementById("nav").style.display = "block";
+    document.querySelector(".mobile-nav").style.display = "block";
   }
   
   /* Close */
   function closeNav() {
-    document.getElementById("nav").style.display = "none";
+    document.querySelector(".mobile-nav").style.display = "none";
   }

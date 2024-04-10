@@ -19,14 +19,13 @@
         font-size: 30px;
     }
 
-    #menu{
+    #menu, a.closebtn{
         display: none;
     }
-/* 
-    nav{
-        display: flex;
-        gap: 30px;
-    } */
+
+    #nav{
+        display: block;
+    }
 
     .navigation li{
         display: block;
@@ -127,12 +126,12 @@
 
     .article-container article h2{
         font-size: 70px;
-        font-size: 900;
+        font-weight: 900;
     }
 
     .article-container article p {
         font-size: 30px;
-        font-size: 450;
+        font-weight: 450;
     }
 
     #third-section article h2{
@@ -195,7 +194,7 @@
     }
 
     .spacer p{
-        padding-right: 10 1rem;
+        padding-right: 1rem;
     }
 
     .h1-scoots{

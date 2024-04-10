@@ -15,8 +15,12 @@
         font-weight: 900;
     }
 
-    #menu{
+    #menu, .closebtn{
         display: none;
+    }
+
+    #nav{
+        display: block;
     }
     
     .navigation li{
@@ -101,7 +105,7 @@
     }
 
     .slideshow-container{
-        grid-template-columns: 1/2;
+        grid-column: 1/2;
         max-width: 95%;
         display: flex;
         margin: auto 3rem;
@@ -121,12 +125,12 @@
 
     .article-container article h2{
         font-size: 54px;
-        font-size: 900;
+        font-weight: 900;
     }
 
     .article-container article p {
         font-size: 25px;
-        font-size: 450;
+        font-weight: 450;
     }
 
     #third-section article h2{
@@ -197,7 +201,7 @@
 
     .spacer h1{
         font-family: "Roboto";
-        font-weight: 1900;
+        font-weight: 1000;
         font-size: 65px;
         line-height: 1.2;
         text-align: left;;
