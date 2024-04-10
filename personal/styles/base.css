@@ -186,6 +186,10 @@ header h1{
     cursor: pointer;
 }
 
+#nav{
+    display: none;
+}
+
 nav{
     background-color: #A8DADC;
 }
@@ -1629,7 +1633,7 @@ footer{
         display: block;
     }
 
-    .closebtn{
+    a.closebtn{
         display: block;
         position: absolute;
         width: 100%;
