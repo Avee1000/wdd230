@@ -177,14 +177,16 @@ header h1{
     display: none;
 } */
 
-#menu::before {
-    content: "\f0c9";
-    font-family: 'Font Awesome 6 Free';
+#menu{
     color: black;
-    font-size: 2rem;
-    font-weight: 900; /*always use this after using font awesome unicodes */
+    font-size: 1.5rem;
+    font-weight: 900;
     cursor: pointer;
     text-decoration: none !important;
+}
+
+#menu i{
+    color: black;
 }
 
 nav{
@@ -276,19 +278,19 @@ nav{
     font-family: "Roboto";
     font-weight: 1000;
     font-size: 60px;
-    opacity: 0;
+    opacity: 1;
 }
-
+/* 
 .hero-caption-h1-fade{
     animation: fade-in 3s forwards linear;
-}
+} */
 
-@keyframes fade-in {
+/* @keyframes fade-in {
 
     to {
         opacity:1;
     }
-}
+} */
 
 .home-scoots{
     padding: 6px;
@@ -725,17 +727,17 @@ main{
 }
 
 .contact-hero-caption h1{
-    opacity: 0;
+    opacity: 1;
     font-size: 120px;
     margin: 0;
-    animation: fade-in 6s forwards linear;
+    /* animation: fade-in 6s forwards linear; */
 }
 
 .contact-hero-caption p{
-    opacity: 0;
+    opacity: 1;
     margin: 0;
     font-size: 50px;
-    animation: fade-in 9s forwards linear;
+    /* animation: fade-in 9s forwards linear; */
 }
 
 .contact-scoots {
@@ -956,7 +958,7 @@ input[type="email"]
     margin: 2rem 0; 
 }
 
-.contact-container-again article h5{
+.contact-container-again article h2{
     margin: 0;
     font-size: 10.5pt;
     font-weight: 400;
@@ -999,9 +1001,9 @@ input[type="email"]
     font-size: 20px;
     line-height:1.5;
     line-break: auto;
-    animation: fade-left 3s  forwards linear;
+    /* animation: fade-left 3s  forwards linear; */
 }
-
+/* 
 @keyframes fade-left{
     from{
         opacity: 0; 
@@ -1011,7 +1013,7 @@ input[type="email"]
         opacity: 1; 
         transform: translateX(0);
     }
-}
+} */
 
 .spacer h1{
     font-family: "Roboto";
@@ -1019,11 +1021,11 @@ input[type="email"]
     font-size: 80px;
     text-align: left;;
     position: relative;
-    transform: translateX(-100%);
-    animation: slideRight 3s forwards linear;
+    /* transform: translateX(-100%); */
+    /* animation: slideRight 3s forwards linear; */
 }
 
-@keyframes slideRight {
+/* @keyframes slideRight {
     from {
         transform: translateX(100%);
     }
@@ -1031,7 +1033,7 @@ input[type="email"]
     to {
         transform: translateX(0);
     }
-}
+} */
 
 .scoots{
     padding: 6px;
@@ -1432,10 +1434,10 @@ textarea{
 }
 
 .rental-hero-caption h1{
-    opacity: 0;
+    opacity: 1;
     font-size: 120px;
     margin: 0;
-    animation: fade-in 6s forwards linear;
+    /* animation: fade-in 6s forwards linear; */
 }
 
 #rental-main {
@@ -1538,7 +1540,7 @@ footer{
     font-size: 19px;
 }
 
-.information-container article h5{
+.information-container article h5, .information-container h2{
     font-size: 14px;
     font-weight: 400;
 }
@@ -1682,15 +1684,16 @@ footer{
     }
     
     .delete{
-        position: relative;
-        display: block;
         color: white;
+        font-size: 1.5rem;
+        font-weight: 900;
+        cursor: pointer;
     }
 
     .delete i{
         cursor: pointer;
         float: right;
-        margin: 1rem 2rem 0 0;
+        margin: 2rem 3rem 0 0;
     }
 
     .navigation li a.active{

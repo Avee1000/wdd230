@@ -14,13 +14,9 @@
     <title>Scoots Rental - Reservations</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/raremedium.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/css/brands.css">
-    <link rel="stylesheet" href="/css/solid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/favicon.ico">
 
 
@@ -37,7 +33,7 @@
 
             <nav>
                 <span class="delete">
-                    <i class="fa-solid fa-times fa-2x"></i>
+                    <i class="fa fa-close"></i>
                 </span>
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
@@ -46,7 +42,7 @@
                     <li><a href="contacts.html">Contact Us</a></li>
                 </ul>
             </nav>
-            <a id="menu"></a>
+            <a id="menu"><i class="fa fa-bars"></i></a>
         </header>
         
         <main id="main">
@@ -94,18 +90,18 @@
                     <div  class="tab" >
                         <fieldset>
                             <h1> Customer Information</h1>
-                            <label>First Name <span class="fa-asterisk"></span><input type="text" id="firstname" name="firstname" required></label>
-                            <label>Last Name<span class="fa-asterisk"></span><input type="text" id="lastname" name="lastname" required></label>
+                            <label>First Name <span class="fa fa-asterisk"></span><input type="text" id="firstname" name="firstname" required></label>
+                            <label>Last Name<span class="fa fa-asterisk"></span><input type="text" id="lastname" name="lastname" required></label>
 
                             <!-- <label>Title or Position*<input type="text" pattern="^[A-Za-z\- ]{7,}" id="title" name="title" required></label> -->
 
                             <!-- <label>Password*<input type="password" pattern="(?=.*\d.*\d)(?=.*[A-Za-z]).{8,}" id="pwd" name="pwd" 
                                 placeholder="Password must be 8 characters long and alpha-numberic" required></label> -->
             
-                            <label>Email<span class="fa-asterisk"></span><input type="email" pattern="[a-zA-Z0-9_.\-]+@[a-Za-Z]+\.(?=.*com)" id="email" name="email" 
+                            <label>Email<span class="fa fa-asterisk"></span><input type="email" pattern="[a-zA-Z0-9_.\-]+@[a-Za-Z]+\.(?=.*com)" id="email" name="email" 
                                 placeholder="someone@example.com" title="Please enter a valid email address" required></label>
 
-                            <label>Mobile Phone No.<span class="fa-asterisk"></span><input type="tel"  id="phone" name="phone" required></label>
+                            <label>Mobile Phone No.<span class="fa fa-asterisk"></span><input type="tel"  id="phone" name="phone" required></label>
                         </fieldset>                                            
                         <div class="next-button">
                             <button type="button" class="nextBtn" onclick="nextPrev(1)">Next</button>
@@ -115,7 +111,7 @@
                     <div class="tab">
                         <fieldset>
                             <h1>Rental Details</h1>
-                            <label>Date Needed <span class="fa-asterisk"></span>
+                            <label>Date Needed <span class="fa fa-asterisk"></span>
                                 <!-- <span id="birthdate-container"> -->
                                     <input type="month" id="date"  name="birthMonth"  value="2024-01" required></label>
 
@@ -155,13 +151,13 @@
                                 </select>
                             </label>
                                 <!-- </span> -->
-                            <label>Number <span class="fa-asterisk"></span><input type="number" id="number" name="number" required></label>
+                            <label>Number <span class="fa fa-asterisk"></span><input type="number" id="number" name="number" required></label>
 
-                            <div class="rentail">Period <span class="fa-asterisk"></span></div>
+                            <div class="rentail">Period <span class="fa fa-asterisk"></span></div>
                             <label><input class='rent' type="radio" name="period" value="half" >Half Day (3 hrs)</label>
                             <label><input class="rent" type="radio" name="period" value="full" >Full Day</label>
 
-                            <div class="rentail">Rental Type  <span class="fa-asterisk"></span></div>
+                            <div class="rentail">Rental Type  <span class="fa fa-asterisk"></span></div>
                                 <ul>
                                     <li>Honda Motor <strong>Scooters</strong>
                                         <label><input type="checkbox" name="metropolitan" value="yes" >Honda Metropolitan (49cc) - 1 person</label>
@@ -188,7 +184,7 @@
                     <div class="tab">
                         <fieldset>
                             <h1>Destination Details</h1>
-                            <label>Home State or Country <span class="fa-asterisk"></span><input type="text" id="state" name="state" required></label>
+                            <label>Home State or Country <span class="fa fa-asterisk"></span><input type="text" id="state" name="state" required></label>
 
                             <label>Cruise Line <span class="optional">(if applicable)</span><input type="text" id="cruise" name="cruise" ></label>
 
@@ -231,26 +227,26 @@
 
                 <div class="information-container">
                     <div class="info-container-again">
-                        <article><i class="fa-solid fa-location-dot"></i><h5>Calle 2 Nte 100, Centro, 77600 Cozumel, Q.R., Mexico</h5></article>
-                        <article><i class="fa-solid fa-location-dot"></i><h5>77675 San Miguel de Cozumel, Quintana Roo, Mexico</h5></article>
-                        <article><i class="fa-solid fa-envelope"></i><h5>eddyidahosa01@gmail.com</h5></article>
-                        <article><i class="fa-solid fa-phone"></i><h5>+234 091 361 961 76</h5></article>
+                        <article><i class="fa fa-location-arrow"></i><h5>Calle 2 Nte 100, Centro, 77600 Cozumel, Q.R., Mexico</h5></article>
+                        <article><i class="fa fa-location-arrow"></i><h5>77675 San Miguel de Cozumel, Quintana Roo, Mexico</h5></article>
+                        <article><i class="fa fa-envelope"></i><h5>eddyidahosa01@gmail.com</h5></article>
+                        <article><i class="fa fa-phone"></i><h5>+234 091 361 961 76</h5></article>
                     </div>
                 </div>
 
                 <div id="social-container">
                     <div class="social-links">
                         <a href="https://facebook.com" target="_blank">
-                            <i class="fa-brands fa-facebook-f"></i>                            
+                            <i class="fa fa-facebook-f"></i>                            
                         </a>
                         <a href="https://twitter.com" target="_blank">
-                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa fa-twitter"></i>
                         </a>
                         <a href="https://instagram.com" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa fa-instagram"></i>
                         </a>
                         <a href="https://en.wikipedia.org/wiki/Cozumel" target="_blank">
-                            <i class="fa-brands fa-wikipedia-w"></i>
+                            <i class="fa fa-wikipedia-w"></i>
                         </a>
                     </div>
 
