@@ -1584,6 +1584,7 @@ footer{
     text-align: center;
     margin: 4px;
     transition: all .4s ease-in-out;
+    text-indent: 100%;
 }
 
 .social-links i{
