@@ -87,17 +87,13 @@
         font-size: 100px;
     }
 
-    #first-section{
-        width: 70%;
-    }
-
     #forecast-container{
-        grid-row: 3/4;
+        
         margin: 1.7rem 2rem ;
     }
 
     .forecastContainer{
-        width: 40%;
+        width: 100%;
     }
 
     .windchill h1{
@@ -328,17 +324,13 @@
         font-size: 100px;
     }
 
-    #first-section{
-        width: 90%;
-    }
-
     #forecast-container{
         grid-row: 3/4;
         margin: 1.7rem 2rem ;
     }
 
     .forecastContainer{
-        width: 40%;
+        width: 100%;
     }
 
     .windchill h1{
