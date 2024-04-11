@@ -19,7 +19,7 @@
         font-size: 30px;
     }
 
-    #menu, a.closebtn{
+    #menu, span.delete{
         display: none;
     }
 

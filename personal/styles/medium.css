@@ -34,7 +34,7 @@
         width: 70px; height: 70px;
     }
 
-    #menu, .closebtn{
+    #menu, span.delete{
         display: none;
     }
 
