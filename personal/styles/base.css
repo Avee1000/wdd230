@@ -1643,6 +1643,7 @@ footer{
         flex-direction: column;
         align-items: center;
         width: 100%;
+        bottom: 9%;
     }
 
     .navigation li {
@@ -1716,11 +1717,11 @@ footer{
     }
 
     .hero-caption h1, .scoots{
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .explore{
-        font-size: clamp(20px, 40px, 40px);
+        font-size: clamp(20px, 50px, 50px);
         padding-bottom: 2rem;
     }
 
@@ -1807,6 +1808,8 @@ footer{
     }
     
     .article-container article h2{
+        font-size: 40px;
+        font-weight: 900;
         margin: 0;
         padding: 0;
         max-width: 90%;
@@ -1814,6 +1817,7 @@ footer{
     }
     
     .article-container article p{
+        font-size: 20px;
         max-width: 80%;
         animation: switch 2s infinite;
     }
@@ -1832,9 +1836,20 @@ footer{
     #third-section article{
         margin: auto;
         width: 90%;
-        /* background-color: #E63946; */
         text-align: center;
     }
+
+    #third-section article h2{
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    #third-section article h3{
+        font-size: 25px;
+
+    }
+
 
     .homepage-scooters-row{
         width: 100%;
