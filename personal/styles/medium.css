@@ -414,6 +414,36 @@
         font-size: 22px;
     }
 
+    /*------------------------------------/////////////////*/
+
+    #rental-main-hero-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+    }
+
+    #rental-hero-box,
+    .rental-hero-image-container{
+        display: none;
+    }
+
+    .rental-hero-caption{
+        margin: 13rem 0 9rem 0 ;
+    }
+
+    .rental-hero-caption h1{
+        font-size: 80px;
+        padding: 0 2rem;
+    }
+    
+    #rental-main table {
+        width: 85%;
+        border-radius: 13px;
+    }
+
+    /*////////////////////////////////////////*/
+
     #footer-links{
         width: 100%;
     }

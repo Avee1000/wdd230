@@ -9,7 +9,7 @@
             content="Scoots Rental - Contact us" />
     <meta property="og:title" content="Scoots Rental Company - Contact us"/>
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://avee1000.github.io/wdd230/images/edo.jpg" />
+    <meta property="og:image" content="https://avee1000.github.io/wdd230/personal/images/homepage/aerial.webp" />
     <meta property="og:url" content="https://avee1000.github.io/wdd230/personal" />
     <title>Scoots Rental - Contact us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -86,16 +86,20 @@
 
             <div id="contact-main-second-section">
                     <div id="contact-form-section">
-                        <label for="name">Name<input type="text" id="name" name="user_name"></label>
+                        <form action="/my-handling-form-page" method="get" class="form">
+                            <label for="name">Name<input type="text" id="name" name="user_name" required></label>
 
-                        <label for="email">Email<input type="email" id="email" name="user_email"></label>
-
-                        <label for="comment">Message<textarea id="comment" placeholder="Enter your message/ " name="user_comment" ></textarea></label>
-
-                        <div class="contact-page-button">
-                            <input type="submit" value="Submit">
+                            <label for="email">Email<input type="email" id="email" name="user_email" required></label>
+    
+                            <label for="comment">Message<textarea id="comment" placeholder="Enter your message/comment " name="user_comment" required></textarea></label>
+    
+                            <div class="contact-page-button">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                        <div id="feedback-container">
+                            <div id="feedback"></div>
                         </div>
-
                     </div>
 
                     <section id="contact-section-caption">
@@ -114,63 +118,79 @@
                         </div>
                     </section>
             </div>
-     
         </main>
            
-            <div id="backToTop">
-                <button class="accordion">Back to top</button>
-            </div>    
-          
-            <footer>
-                <div id="diagonal-back">
-                    <a id="logo-link2" href="index.html">
-                        <img class='logo2' src="images/black.webp"  alt="ServiceHub Logo" loading="lazy">
-                    </a>
-    
-                    <div class="links-container">
-                        <a class="footer-links" href="index.html">Go to Homepage</a>
-                        <a class="footer-links" href="reservations.html">Make a Reservation</a>
-                        <a class="footer-links" href="Rental.html">View our Rental plans</a>
-                    </div>
-    
-                    <div class="information-container">
-                        <div class="info-container-again">
-                            <article><i class="fa-solid fa-location-dot"></i><h5>Calle 2 Nte 100, Centro, 77600 Cozumel, Q.R., Mexico</h5></article>
-                            <article><i class="fa-solid fa-location-dot"></i><h5>77675 San Miguel de Cozumel, Quintana Roo, Mexico</h5></article>
-                            <article><i class="fa-solid fa-envelope"></i><h5>eddyidahosa01@gmail.com</h5></article>
-                            <article><i class="fa-solid fa-phone"></i><h5>+234 091 361 961 76</h5></article>
-                        </div>
-                    </div>
-    
-                    <div id="social-container">
-                        <div class="social-links">
-                            <a href="https://facebook.com" target="_blank">
-                                <i class="fa-brands fa-facebook-f"></i>                            
-                            </a>
-                            <a href="https://twitter.com" target="_blank">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="https://instagram.com" target="_blank">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/Cozumel" target="_blank">
-                                <i class="fa-brands fa-wikipedia-w"></i>
-                            </a>
-                        </div>
-    
-                        <div class="copyright">
-                            <p><span>~Scoots~</span> &copy;Copyright. All rights reserved.<br><br>2024 - Osamagumwende Flourish Idahosa-Sunny</p>
-                        </div>
-    
-                        </div>
+        <div id="backToTop">
+            <button class="accordion">Back to top</button>
+        </div>    
+        
+        <footer>
+            <div id="diagonal-back">
+                <a id="logo-link2" href="index.html">
+                    <img class='logo2' src="images/black.webp"  alt="ServiceHub Logo" loading="lazy">
+                </a>
+
+                <div class="links-container">
+                    <a class="footer-links" href="index.html">Go to Homepage</a>
+                    <a class="footer-links" href="reservations.html">Make a Reservation</a>
+                    <a class="footer-links" href="Rental.html">View our Rental plans</a>
                 </div>
-            </footer>
+
+                <div class="information-container">
+                    <div class="info-container-again">
+                        <article><i class="fa-solid fa-location-dot"></i><h5>Calle 2 Nte 100, Centro, 77600 Cozumel, Q.R., Mexico</h5></article>
+                        <article><i class="fa-solid fa-location-dot"></i><h5>77675 San Miguel de Cozumel, Quintana Roo, Mexico</h5></article>
+                        <article><i class="fa-solid fa-envelope"></i><h5>eddyidahosa01@gmail.com</h5></article>
+                        <article><i class="fa-solid fa-phone"></i><h5>+234 091 361 961 76</h5></article>
+                    </div>
+                </div>
+
+                <div id="social-container">
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>                            
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Cozumel" target="_blank">
+                            <i class="fa-brands fa-wikipedia-w"></i>
+                        </a>
+                    </div>
+
+                    <div class="copyright">
+                        <p><span>~Scoots~</span> &copy;Copyright. All rights reserved.<br><br>2024 - Osamagumwende Flourish Idahosa-Sunny</p>
+                    </div>
+
+                    </div>
+            </div>
+        </footer>
 
         <script>
             const scrollToTop = document.querySelector(".accordion");
 
             scrollToTop.addEventListener("click", () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // get the feedback div element so we can do something with it.
+            const feedbackContainer = document.getElementById('feedback-container');
+            const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+                // stop the form from doing the default action.
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible! <br><br><br><br> Please Refresh this page to send us a message' ;
+                // make the feedback element visible.
+                feedbackContainer.style.display = "flex";
+                // add a class to move everything down so our message doesn't cover it.
+                feedbackElement.classList.add('moveout');
             });
         </script>
         <script src="scripts/hamburger.js" ></script>
