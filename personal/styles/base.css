@@ -1547,6 +1547,7 @@ footer{
 
     .header-box{
         margin: 0;      
+        align-items: center;
     }
 
     .logo1{
@@ -1568,13 +1569,13 @@ footer{
     }
 
     #menu{
+        display: inline-block;
+        width: 50px;     line-height: 50px;    height: 50px; 
+        border-radius: 50%;
         background-color: white;
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin: 0;   
-        padding: 10px; 
-        border-radius: 2px;
+        text-align: center;
+        transition: all .4s ease-in-out;
+        animation: switch 2s infinite;
     }
 
     .navigation{
